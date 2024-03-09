@@ -37,7 +37,7 @@ skills:
 
 - name: Linux
   logo: /images/sections/skills/linux.png
-  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
+  summary: "Using as the main operating system. Capable of writing bash/shell and python scripts."
 
 - name: Git
   logo: /images/sections/skills/git.png
