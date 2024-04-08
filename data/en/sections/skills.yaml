@@ -11,39 +11,54 @@ section:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: Kubernetes
-  logo: /images/sections/skills/kubernetes.png
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  url: "https://kubernetes.io/"
-
-- name: Go Development
-  logo: /images/sections/skills/go.png
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  url: "https://golang.org/"
-
-- name: Cloud Computing
-  logo: /images/sections/skills/cloud.png
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
-
-- name: Docker
-  logo: /images/sections/skills/docker.svg
-  summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
-  url: "https://www.docker.com/"
-
-- name: Prometheus
-  logo: /images/sections/skills/prometheus.png
-  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
-  url: "https://prometheus.io/"
-
 - name: Linux
   logo: /images/sections/skills/linux.png
-  summary: "Using as the main operating system. Capable of writing bash/shell and python scripts."
+  summary: "I use Linux as my main operating system. I am proficient in writing Bash/Shell and Python scripts. I am eager to enhance my skills and enjoy solving problems on Linux. Linux is my passion and drives my continuous improvement."
+
+- name: Python
+  #logo: /images/sections/skills/python.png
+  summary: "Proficient in writing scripts with AI, continuously enhancing skills. Enthusiastic about utilizing Python to solve problems and automate tasks."
+  url: "https://www.python.org/"
+
+- name: SQL
+  #  logo: /images/sections/skills/sql.png
+  summary: "Mastered fundamentals with school curriculum"
+
+- name: Web Development
+  #logo: /images/sections/skills/html.png
+  summary: "Web Development: Familiar with HTML and CSS, with introductory exposure to PHP; constructed a simple website using these technologies"
+
+- name: C++
+  #logo: /images/sections/skills/c++.png
+  summary: "Acquired fundamental knowledge through school curriculum"
 
 - name: Git
   logo: /images/sections/skills/git.png
-  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
+  summary: "I have experience with git-based development, primarily using GitHub. I learned Git when I needed to create Python scripts to solve problems. While I am still learning, I have a solid understanding of fundamental Git CLI usage."
   url: "https://git-scm.com/"
 
-- name: C++
-  logo: /images/sections/skills/c++.png
-  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
+# - name: Kubernetes
+#   logo: /images/sections/skills/kubernetes.png
+#   summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
+#   url: "https://kubernetes.io/"
+#
+- name: Bash 
+  #logo: /images/sections/skills/bash.png
+  summary: "Basic fundamentals to write scripts. "
+  url: "https://www.gnu.org/software/bash/"
+
+- name: Cloud Computing
+  logo: /images/sections/skills/cloud.png
+  summary: "I set up Nextcloud on a Fedora Server manually by configuring PHP, MySQL, and essential components. This project honed my skills in infrastructure setup, database management, and cloud environment troubleshooting. Although my focus was on personal cloud solutions, this experience bolstered my knowledge of cloud computing principles. I aim to expand into public cloud platforms, focusing on scalability, automation, and other critical cloud technology aspects."
+
+- name: Docker
+  logo: /images/sections/skills/docker.svg
+  summary: "I have experience to use apps with docker. Also I tried my nextcloud installation with docker before manual nextcloud installation. "
+  url: "https://www.docker.com/"
+
+# - name: Prometheus
+#   logo: /images/sections/skills/prometheus.png
+#   summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
+#   url: "https://prometheus.io/"
+#
+
