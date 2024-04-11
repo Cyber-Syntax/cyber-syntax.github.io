@@ -16,7 +16,6 @@ skills:
   summary: "I use Linux as my main operating system. I am proficient in writing Bash/Shell and Python scripts. I am eager to enhance my skills and enjoy solving problems on Linux. Linux is my passion and drives my continuous improvement."
 
 - name: Python
-  #logo: /images/sections/skills/python.png
   summary: "Proficient in writing scripts with AI, continuously enhancing my skills. Enthusiastic about utilizing Python to solve problems and automate repetitive tasks."
 
 - name: SQL
