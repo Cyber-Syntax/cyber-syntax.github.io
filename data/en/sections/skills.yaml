@@ -17,19 +17,18 @@ skills:
 
 - name: Python
   #logo: /images/sections/skills/python.png
-  summary: "Proficient in writing scripts with AI, continuously enhancing skills. Enthusiastic about utilizing Python to solve problems and automate tasks."
-  url: "https://www.python.org/"
+  summary: "Proficient in writing scripts with AI, continuously enhancing my skills. Enthusiastic about utilizing Python to solve problems and automate repetitive tasks."
 
 - name: SQL
   #  logo: /images/sections/skills/sql.png
-  summary: "Mastered fundamentals with school curriculum"
+  summary: "Mastered fundamentals with school curriculum."
 
 - name: Web Development
   #logo: /images/sections/skills/html.png
-  summary: "Web Development: Familiar with HTML and CSS, with introductory exposure to PHP; constructed a simple website using these technologies"
+  summary: "Familiar with HTML and CSS, with introductory exposure to PHP; constructed a simple website using these technologies."
 
 - name: C++
-  #logo: /images/sections/skills/c++.png
+  #logo: /image: imageages/sections/skills/c++.png
   summary: "Acquired fundamental knowledge through school curriculum"
 
 - name: Git
@@ -37,13 +36,8 @@ skills:
   summary: "I have experience with git-based development, primarily using GitHub. I learned Git when I needed to create Python scripts to solve problems. While I am still learning, I have a solid understanding of fundamental Git CLI usage."
   url: "https://git-scm.com/"
 
-# - name: Kubernetes
-#   logo: /images/sections/skills/kubernetes.png
-#   summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-#   url: "https://kubernetes.io/"
-#
 - name: Bash 
-  #logo: /images/sections/skills/bash.png
+  #logo: /image: imageages/sections/skills/bash.png
   summary: "Basic fundamentals to write scripts. "
   url: "https://www.gnu.org/software/bash/"
 
@@ -53,12 +47,6 @@ skills:
 
 - name: Docker
   logo: /images/sections/skills/docker.svg
-  summary: "I have experience to use apps with docker. Also I tried my nextcloud installation with docker before manual nextcloud installation. "
+  summary: "I have experience to using apps with docker. Also I tried my nextcloud installation with docker before manual nextcloud installation. "
   url: "https://www.docker.com/"
-
-# - name: Prometheus
-#   logo: /images/sections/skills/prometheus.png
-#   summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
-#   url: "https://prometheus.io/"
-#
 

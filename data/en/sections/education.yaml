@@ -59,17 +59,17 @@ degrees:
     - name: Java 
       achieved: 2.25
       outOf: 4
-  publications: #(optional)
-  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    url: "#"
-  - title: Fusce eu augue ut odio porttitor pulvinar.
-    url: "#"
+  # publications: #(optional)
+  # - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  #   url: "#"
+  # - title: Fusce eu augue ut odio porttitor pulvinar.
+  #   url: "#"
   extracurricularActivities: #(optional)
   - Improved my English proficiency from intermediate to fluent
   - Completed CS50's Introduction to Programming with Python course.
-  - Wrote scripts.
+  - Developed scripts in Python and Bash, showcasing skills in automation and problem-solving."
   - Expanded my knowledge of networking.
-  - Explored cybersecurity but discovered a greater passion for Linux.
+  - Engaged with Cybermentor’s ‘Zero to Hero’ course, completing four episodes and initiating knowledge acquisition in network penetration testing alongside fundamental cybersecurity principles.
   - Resolved numerous Linux-related issues and explored various Linux distributions to discover my preferred distro.
   - Acquired knowledge in Gentoo, Arch, Debian and Fedora, further expanding my Linux expertise, with significant advancements made in Fedora and Arch.
   # custonSections: #(optional)
@@ -108,17 +108,18 @@ degrees:
     - name: C++
       achieved: 2.55
       outOf: 4
-  publications: #(optional)
-  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    url: "#"
-  - title: Fusce eu augue ut odio porttitor pulvinar.
-    url: "#"
+  # publications: #(optional)
+  # - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  #   url: "#"
+  # - title: Fusce eu augue ut odio porttitor pulvinar.
+  #   url: "#"
   extracurricularActivities: #(optional)
   - Studied fundamental C++, Visual Basic, and C# languages.
-  - Learned the fundamentals of virtualizing Linux on Windows
+  - Learned the fundamentals of virtualizing Linux on Windows.
   - Acquired fundamental knowledge of SQL and practiced through homework assignments.
   - Developed a basic blog website for managing my web development assignments, gaining proficiency in HTML, CSS and PHP.
-  # custonSections: #(optional)
+
+# custonSections: #(optional)
   #   - name: Thesis
   #     content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   #   - name: Supervisor
