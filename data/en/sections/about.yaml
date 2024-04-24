@@ -83,12 +83,12 @@ badges:
 #   badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
 #
 - type: soft-skill-indicator
-  name: Leadership
+  name: Curiosity
   percentage: 90
   color: blue
 
 - type: soft-skill-indicator
-  name: Team Work
+  name: Problem Solving
   percentage: 90
   color: yellow
 

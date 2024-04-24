@@ -6,14 +6,15 @@ greeting: "Hi, I am"
 image: "images/author/john.png"
 # give your some contact information. they will be used in the footer
 contactInfo:
-  email: "Cyber-Syntax@example.com"
-  phone: "+0123456789"
+  #email: "Cyber-Syntax@example.com"
+  #phone: "+0123456789"
   github: Cyber-Syntax
-  linkedin: Cyber-Syntax
-  researchgate: Cyber-Syntax
+  linkedin: şerif-etiker-76260b284
+  #researchgate: Cyber-Syntax
 
 # some summary about what you do
 summary:
   - I am a Linux Enthusiast
   - I am a Computer Programmer
-  - I love solving problems on Linux using Python and Bash.
+  - I love solving problems on Linux.
+  - I love writing scripts in Python and Bash.
