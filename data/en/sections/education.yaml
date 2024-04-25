@@ -38,27 +38,43 @@ degrees:
     name: University of Anadolu
     url: "#"
     logo: /images/sections/education/university.jpg
-  grade: #(optional)
-    scale: CGPA
-    achieved: 3
-    outOf: 4
+  # grade: #(optional)
+  #   scale: CGPA
+  #   achieved: 3
+  #   outOf: 4
   takenCourses: #(optional)
     # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
-    showGrades: true
+    showGrades: false
     collapseAfter: 3
     courses:
-    - name: Data Structures and Algorithm
-      achieved: 3.75
-      outOf: 4
-    - name: Network Security
-      achieved: 3.8
-      outOf: 4
-    - name: Operating System
-      achieved: 3.8
-      outOf: 4
-    - name: Java 
-      achieved: 2.25
-      outOf: 4
+    # - name: Data Structures and Algorithm
+    #   achieved: 3.75
+    #   outOf: 4
+    - name: Advanced Programming
+    - name: Database Programming
+    - name: Internet And Web Programming
+    - name: New Trends in Programming
+    - name: Database Systems
+    - name: Social Network Analysis
+    - name: Data Mining
+    - name: Project Management
+    - name: User Experience Design
+    - name: Enterprise Resource Planning Systems
+    - name: System Analysis and Design
+    - name: Process Table Programming
+    - name: Production Management
+    - name: Digital Transformation
+    - name: Brand and Management
+    - name: Organizational Behavior
+    - name: Network Management and Information Security
+    - name: Entrepreneurship and Starting a Business
+    - name: Innovation Management
+    - name: Operations Research
+    - name: Decision Models
+    - name: Financial Statements Analysis
+    - name: Customer Relations Management
+    - name: Decision Support Systems
+
   # publications: #(optional)
   # - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   #   url: "#"
@@ -67,11 +83,11 @@ degrees:
   extracurricularActivities: #(optional)
   - Improved my English proficiency from intermediate to fluent
   - Completed CS50's Introduction to Programming with Python course.
-  - Developed scripts in Python and Bash, showcasing skills in automation and problem-solving."
+  - Developed scripts in Python and Bash to showcase skills in automation and problem-solving.
   - Expanded my knowledge of networking.
-  - Engaged with Cybermentor’s ‘Zero to Hero’ course, completing four episodes and initiating knowledge acquisition in network penetration testing alongside fundamental cybersecurity principles.
-  - Resolved numerous Linux-related issues and explored various Linux distributions to discover my preferred distro.
-  - Acquired knowledge in Gentoo, Arch, Debian and Fedora, further expanding my Linux expertise, with significant advancements made in Fedora and Arch.
+  - Engaged in Cybermentor’s ‘Zero to Hero’ course to acquire knowledge in network penetration testing and fundamental cybersecurity principles.
+  - Having used Linux as my main operating system for almost four years, I have successfully resolved numerous Linux-related issues and explored various Linux distributions.
+  - Acquired knowledge in Gentoo, Arch, Debian, and Fedora to expand my Linux expertise, with substantial progress in Fedora and Arch. Currently exploring new distros like Nixos to enhance my skills for my sysadmin role.
   # custonSections: #(optional)
   #   - name: Thesis
   #     content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -87,27 +103,31 @@ degrees:
     name: University of Namik Kemal
     url: "#"
     logo: /images/sections/education/university.jpg
-  grade: #(optional)
-    scale: CGPA
-    achieved: 3
-    outOf: 4
+  # grade: #(optional)
+  #   scale: CGPA
+  #   achieved: 3
+  #   outOf: 4
   takenCourses: #(optional)
     # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
-    showGrades: true
+    showGrades: false
     collapseAfter: 3
     courses:
-    - name: Data Structures and Algorithm
-      achieved: 2.75
-      outOf: 4
-    - name: Network Security
-      achieved: 3.80
-      outOf: 4
-    - name: Operating System
-      achieved: 3.5
-      outOf: 4
-    - name: C++
-      achieved: 2.55
-      outOf: 4
+    # - name: Operating System
+    #   achieved: 3.5
+    #   outOf: 4
+    - name: Computer Hardware
+    - name: Object Oriented Programming
+    - name: Data Structures and Programming
+    - name: Database
+    - name: Artificial Neural Networks
+    - name: System Programming
+    - name: Internet Programming
+    - name: System Analysis and Design
+    - name: Visual Programming
+    - name: Professional Foreign Language (English)
+    - name: Math
+    - name: Principles of Atatürk and History of Turkish Revolution
+    - name: Turkish Language
   # publications: #(optional)
   # - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   #   url: "#"
@@ -115,9 +135,8 @@ degrees:
   #   url: "#"
   extracurricularActivities: #(optional)
   - Studied fundamental C++, Visual Basic, and C# languages.
-  - Learned the fundamentals of virtualizing Linux on Windows.
+  - Learned the fundamentals of virtualizing Linux on VMware and Virtualbox.
   - Acquired fundamental knowledge of SQL and practiced through homework assignments.
-  - Developed a basic blog website for managing my web development assignments, gaining proficiency in HTML, CSS and PHP.
 
 # custonSections: #(optional)
   #   - name: Thesis

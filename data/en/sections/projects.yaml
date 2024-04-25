@@ -3,7 +3,7 @@ section:
   name: Projects
   id: projects
   enable: true
-  weight: 4
+  weight: 5
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
@@ -83,6 +83,6 @@ projects:
   timeline: " May 2023 - Present"
   repo: https://github.com/Cyber-Syntax/dot-files/blob/bare-repo/.config/qtile/scripts/sink-change.sh
   #url: ""
-  summary: I wrote this script to adjust the sound output and display the volume in my window manager on various Linux distributions. It represents my first foray into bash scripting as I explore this new skill.
+  summary: I wrote this script to adjust the sound output and display the volume in my window managers. It represents my first foray into bash scripting as I explore this new skill.
   tags: ["bash" ]
 
