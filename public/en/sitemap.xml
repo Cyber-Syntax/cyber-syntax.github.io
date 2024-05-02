@@ -169,6 +169,16 @@
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2020-06-08T08:06:25+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="tr"
+                href="http://localhost:1313/tr/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/posts/"
+                />
   </url><url>
     <loc>http://localhost:1313/posts/category/sub-category/rich-content/</loc>
     <lastmod>2020-06-08T08:06:25+06:00</lastmod>
@@ -215,8 +225,6 @@
     <loc>http://localhost:1313/posts/category/_index.bn/</loc>
   </url><url>
     <loc>http://localhost:1313/notes/_index.bn/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/_index.bn/</loc>
   </url><url>
     <loc>http://localhost:1313/notes/bash/_index.bn/</loc>
   </url>

@@ -1,9 +1,9 @@
 {
 	"version": 3,
 	"file": "application.css",
-	"sourceRoot": "/home/developer/Documents/repository/cyber-syntax.github.io",
+	"sourceRoot": "/home/cyber-syntax/Documents/repository/cyber-syntax.github.io",
 	"sources": [
-		"/home/developer/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/hugo-toha/toha/v4@v4.3.0/assets/styles/application.template.scss",
+		"/home/cyber-syntax/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/hugo-toha/toha/v4@v4.3.0/assets/styles/application.template.scss",
 		"node_modules/bootstrap/scss/bootstrap.scss",
 		"node_modules/bootstrap/scss/_functions.scss",
 		"node_modules/bootstrap/scss/_variables.scss",
