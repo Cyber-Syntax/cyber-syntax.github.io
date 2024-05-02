@@ -1,0 +1,21 @@
+# some information about you
+name: "Şerif"
+nickname: "Cyber-Syntax"
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: "Merhaba, Ben"
+image: "images/author/john.png"
+# give your some contact information. they will be used in the footer
+contactInfo:
+  #email: "Cyber-Syntax@example.com"
+  #phone: "+0123456789"
+  github: Cyber-Syntax
+  linkedin: şerif-etiker-76260b284
+  #researchgate: Cyber-Syntax
+
+# some summary about what you do
+summary:
+  - Ben bir Linux Tutkunuyum.
+  - Ben bir Bilgisayar Programcısıyım.
+  - Linux'ta sorun çözmeye bayılırım.
+  - Python ve Bash ile betikler yazmayı seviyorum.
+

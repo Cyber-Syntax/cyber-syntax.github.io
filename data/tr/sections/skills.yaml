@@ -1,0 +1,51 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: Linux
+  logo: /images/sections/skills/linux.png
+  summary: "I use Linux as my main operating system. I am proficient in writing Bash/Shell and Python scripts. I am eager to enhance my skills and enjoy solving problems on Linux. Linux is my passion and drives my continuous improvement."
+
+- name: Python
+  summary: "Proficient in writing scripts with AI, continuously enhancing my skills. Enthusiastic about utilizing Python to solve problems and automate repetitive tasks."
+
+- name: SQL
+  #  logo: /images/sections/skills/sql.png
+  summary: "Mastered fundamentals with school curriculum."
+
+- name: Web Development
+  #logo: /images/sections/skills/html.png
+  summary: "Familiar with HTML and CSS, with introductory exposure to PHP; constructed a simple website using these technologies."
+
+- name: C++
+  #logo: /image: imageages/sections/skills/c++.png
+  summary: "Acquired fundamental knowledge through school curriculum"
+
+- name: Git
+  logo: /images/sections/skills/git.png
+  summary: "I have experience with git-based development, primarily using GitHub. I learned Git when I needed to create Python scripts to solve problems. While I am still learning, I have a solid understanding of fundamental Git CLI usage."
+  url: "https://git-scm.com/"
+
+- name: Bash 
+  #logo: /image: imageages/sections/skills/bash.png
+  summary: "Basic fundamentals to write scripts. "
+  url: "https://www.gnu.org/software/bash/"
+
+- name: Cloud Computing
+  logo: /images/sections/skills/cloud.png
+  summary: "I set up Nextcloud on a Fedora Server manually by configuring PHP, MySQL, and essential components. This project honed my skills in infrastructure setup, database management, and cloud environment troubleshooting. Although my focus was on personal cloud solutions, this experience bolstered my knowledge of cloud computing principles. I aim to expand into public cloud platforms, focusing on scalability, automation, and other critical cloud technology aspects."
+
+- name: Docker
+  logo: /images/sections/skills/docker.svg
+  summary: "I have experience to using apps with docker. Also I tried my nextcloud installation with docker before manual nextcloud installation. "
+  url: "https://www.docker.com/"
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gönderiler on Cyber-Syntax&#39;s Blog</title>
+    <link>http://localhost:1313/tr/posts/</link>
+    <description>Recent content in Gönderiler on Cyber-Syntax&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr</language>
+    <lastBuildDate>Mon, 29 Apr 2024 08:06:25 +0600</lastBuildDate><atom:link href="http://localhost:1313/tr/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Neden korsan yazılım kullanmamalısınız?</title>
+      <link>http://localhost:1313/tr/posts/cyber-security/piracy/</link>
+      <pubDate>Mon, 29 Apr 2024 08:06:25 +0600</pubDate>
+      
+      <guid>http://localhost:1313/tr/posts/cyber-security/piracy/</guid>
+      <description>Neden korsan yazılım kullanmamalısınız? Bir öğrenci olarak söyleyebilirim ki, zamanında bende korsanın çözüm olduğunu zannediyordum; ta ki açık kaynak ve ücretsiz alternatiflerinin (bkz. https://alternativeto.net/) olduğunu ve korsan uygulamalarının virüs içerebildiğini öğrenene kadar. Korsan uygulamalarda genel olarak uygulamayı kıran hacker grupları, itibarlarını kötülemesin diye virüs eklemeyi tercih etmiyorlar ama bu korsan uygulamalar Türkiyede ki son kullanıcının ulaşabileceği sitelere ulaşana kadar virüs eklenmiş olma olasılığı çok yüksek. Bu nedenle, uygulamaya vereceğiniz paradan çok daha fazla zarara uğrayabiliyorsunuz.</description>
+    </item>
+    
+    
+  </channel>
+</rss>
