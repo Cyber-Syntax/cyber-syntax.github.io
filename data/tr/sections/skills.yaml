@@ -3,7 +3,7 @@ section:
   name: Skills
   id: skills
   enable: true
-  weight: 2
+  weight: 5
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
@@ -13,10 +13,10 @@ section:
 skills:
 - name: Linux
   logo: /images/sections/skills/linux.png
-  summary: "I use Linux as my main operating system. I am proficient in writing Bash/Shell and Python scripts. I am eager to enhance my skills and enjoy solving problems on Linux. Linux is my passion and drives my continuous improvement."
+  summary: "He knows the most commonly used terminal commands and can troubleshoot common issues. He is passionate about Linux and eager to enhance his knowledge of it. He has several years of experience using Linux as his main operating system."
 
 - name: Python
-  summary: "Proficient in writing scripts with AI, continuously enhancing my skills. Enthusiastic about utilizing Python to solve problems and automate repetitive tasks."
+  summary: "Proficient in writing scripts, continuously enhancing my skills. Enthusiastic about utilizing Python to solve problems and automate repetitive tasks."
 
 - name: SQL
   #  logo: /images/sections/skills/sql.png
@@ -24,7 +24,7 @@ skills:
 
 - name: Web Development
   #logo: /images/sections/skills/html.png
-  summary: "Familiar with HTML and CSS, with introductory exposure to PHP; constructed a simple website using these technologies."
+  summary: "Familiar with HTML and CSS, with introductory exposure to PHP; constructed a simple website using these technologies. I also developed websites using WordPress and Joomla."
 
 - name: C++
   #logo: /image: imageages/sections/skills/c++.png
@@ -33,12 +33,10 @@ skills:
 - name: Git
   logo: /images/sections/skills/git.png
   summary: "I have experience with git-based development, primarily using GitHub. I learned Git when I needed to create Python scripts to solve problems. While I am still learning, I have a solid understanding of fundamental Git CLI usage."
-  url: "https://git-scm.com/"
 
 - name: Bash 
   #logo: /image: imageages/sections/skills/bash.png
-  summary: "Basic fundamentals to write scripts. "
-  url: "https://www.gnu.org/software/bash/"
+  summary: "Fundamental knowledge of coding with the ability to utilize internet resources and AI assistance for problem-solving and code implementation. "
 
 - name: Cloud Computing
   logo: /images/sections/skills/cloud.png
@@ -47,5 +45,4 @@ skills:
 - name: Docker
   logo: /images/sections/skills/docker.svg
   summary: "I have experience to using apps with docker. Also I tried my nextcloud installation with docker before manual nextcloud installation. "
-  url: "https://www.docker.com/"
 

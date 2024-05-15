@@ -53,13 +53,13 @@ enableEmoji: true
 # Site parameters
 params:
   # Background image of the landing page
-  background: /images/site/background.jpg
+  background: /images/site/9.jpg # defualt= background , 11.png
 
   # Provide logos for your site. The inverted logo will be used in the initial
   # transparent navbar and the main logo will be used in the non-transparent navbar.
   logo:
-    main: /images/site/main-logo.png
-    inverted: /images/site/inverted-logo.png
+    #main: /images/site/main-logo.png
+    #inverted: /images/site/inverted-logo.png
     favicon: /images/site/favicon.png
 
   # GitHub repo of your site
@@ -88,11 +88,11 @@ params:
       showAuthor: true # shows the author of post (defaults true)
       # Share post on different social media
       shareButtons:
-        facebook: true
+        facebook: false
         twitter: true
         linkedin: true
         reddit: true
-        whatsapp: true
+        whatsapp: false
         email: true
         # tumblr: true
         # pocket: true
@@ -101,7 +101,7 @@ params:
 
     # Enable & configure "Notes" features
     notes:
-      enable: true
+      enable: false
 
     # Enable comment feature. There, should be only one of them.
     comment:
@@ -252,7 +252,7 @@ params:
     
         # Enable reading time support in post cards and in post pages
     readingTime:
-      enable: false
+      enable: true
     
     # Number of posts to show to each page. Default is "12"
     pagination:

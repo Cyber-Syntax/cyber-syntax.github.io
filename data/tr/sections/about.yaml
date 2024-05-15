@@ -8,11 +8,11 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Linux
-# your company information
-company:
-  #  name: Example Co.
-  #  url: "https://www.example.com"
+# designation: Linux
+# # your company information
+# company:
+#   #  name: Example Co.
+#   #  url: "https://www.example.com"
 
 # your resume. this file path should be relative to you "static" directory
 # Dreprecated. Use resourceLinks instead.
@@ -24,17 +24,9 @@ summary: 'I am a passionate about becaming System Administrator. I love Linux an
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
-# - name: Email
-#   icon: "fas fa-envelope"
-#   url: "example@gmail.com"
-
 - name: Github
   icon: "fab fa-github"
   url: "https://www.github.com/cyber-syntax"
-
-# - name: Stackoverflow
-#   icon: "fab fa-stack-overflow"
-#   url: "#"
 
 - name: LinkedIn
   icon: "fab fa-linkedin"
@@ -44,24 +36,17 @@ socialLinks:
   icon: "fab fa-twitter"
   url: "https://twitter.com/serif_et"
 
-# - name: Facebook
-#   icon: "fab fa-facebook"
-#   url: "#"
-
 - name: Mastadon
   icon: "fab fa-mastodon"
   url: "https://mastodon.social/@priv4cy"
-  rel: "me noopener"
-
-# - name: ResearchGate
-#   icon: "fab fa-researchgate"
-#   url: "https://www.researchgate.net/profile/john-doe"
+  # rel: "me noopener"
 
 # You can put custom buttons to link your relevant resources.
 # For example, you can put link for your resume.
-resourceLinks:
-- title: "My Resume"
-  url: "files/resume.pdf"
+
+# resourceLinks:
+# - title: "My Resume"
+#   url: "files/resume.pdf"
 
 # Show your badges
 # You can show your verifiable certificates from https://www.credly.com.
@@ -90,11 +75,11 @@ badges:
 - type: soft-skill-indicator
   name: Problem Solving
   percentage: 90
-  color: yellow
+  color: green
 
 - type: soft-skill-indicator
   name: Hard Working
-  percentage: 85
+  percentage: 90
   color: orange
 
 # you can also provide color code instead of the color name

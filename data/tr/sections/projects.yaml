@@ -3,7 +3,7 @@ section:
   name: Projects
   id: projects
   enable: true
-  weight: 5
+  weight: 3
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
@@ -33,6 +33,16 @@ projects:
   summary: Contributed as a translator for the Turkish language.
   tags: [ "translation", "project-contribution" ]     
 
+- name: 🚀 AutoTarCompress
+  #logo: /images/sections/projects/toha.png
+  role: Owner
+  timeline: "Apr 2023 - Present"
+  repo: https://github.com/Cyber-Syntax/AutoTarCompress
+  summary: The script compresses specific directories into tar files. I needed to back up my important files to the cloud. Therefore, I wrote this script to backup and encrypt them. Additionally, I have made some enhancements such as decryption, encryption, and creating tar files.
+  tags: ["python" ]
+
+
+
 - name: 🦄 my-unicorn
   #logo: /images/sections/projects/kubernetes.png
   role: Owner
@@ -41,14 +51,6 @@ projects:
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
   summary: Through my journey of learning Python, I created a script to automate the installation and updating of Appimage apps, incorporating SHA-{256-512} verification for security. I focused on enhancing the script by introducing features like creating a JSON file to easily add app versions, choices, names, and repository details, making it user-friendly for installation automation. Initially designed for three apps, I also included automatic installation for these apps. The script prompts users with questions like whether to create backups, facilitating JSON file creation. This project has been invaluable as it allowed me to delve into algorithms, such as looping through apps for updates. It’s not just a project but a significant learning experience that has shaped my Python skills, cementing its importance in my journey of growth and proficiency.
   tags: ["python"]
-
-- name: 🚀 AutoTarCompress
-  #logo: /images/sections/projects/toha.png
-  role: Owner
-  timeline: "Apr 2023 - Present"
-  repo: https://github.com/Cyber-Syntax/AutoTarCompress
-  summary: The script compresses specific directories into tar files. I needed to back up my important files to the cloud. Therefore, I wrote this script to backup and encrypt them. Additionally, I have made some enhancements such as decryption, encryption, and creating tar files.
-  tags: ["python" ]
 
 - name: 🛸 WallpaperChanger 
   #logo: /images/sections/projects/no-code.png
@@ -86,3 +88,18 @@ projects:
   summary: I wrote this script to adjust the sound output and display the volume in my window managers. It represents my first foray into bash scripting as I explore this new skill.
   tags: ["bash" ]
 
+- name: 💯 find_final_grade 
+  role: Owner
+  timeline: " Jan 2023 - Jan 2023 "
+  repo: https://github.com/Cyber-Syntax/learning_Python/blob/main/find_final_grade/gelincik.py
+  summary: Created a Python script to determine how much grade I need to achieve on my final exam to pass my lesson, based on the mid-term score.
+  tags: [ "python", "archived" ]
+
+- name: 👒 dnf-update-status 
+  role: Owner
+  timeline: " Feb 2024 - Feb 2024 "
+  repo: https://github.com/Cyber-Syntax/dot-files/blob/bare-repo/.config/qtile/scripts/dnf-update-status.py
+  summary: Developed a Python script to monitor and display newly updated packages on the Fedora Linux distribution.
+  tags: [ "python", "archived" ]
+
+    

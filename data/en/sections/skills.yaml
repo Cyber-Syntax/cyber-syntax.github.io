@@ -40,9 +40,9 @@ skills:
 
 - name: Cloud Computing
   logo: /images/sections/skills/cloud.png
-  summary: "I set up Nextcloud on a Fedora Server manually by configuring PHP, MySQL, and essential components. This project honed my skills in infrastructure setup, database management, and cloud environment troubleshooting. Although my focus was on personal cloud solutions, this experience bolstered my knowledge of cloud computing principles. I aim to expand into public cloud platforms, focusing on scalability, automation, and other critical cloud technology aspects."
+  summary: "I set up Fedora Server on my old laptop. I set up Nextcloud on a Fedora Server manually by configuring PHP, MySQL, and essential components."
 
-- name: Docker
-  logo: /images/sections/skills/docker.svg
-  summary: "I have experience to using apps with docker. Also I tried my nextcloud installation with docker before manual nextcloud installation. "
+# - name: Docker
+#   logo: /images/sections/skills/docker.svg
+#   summary: "I have experience to using apps with docker. Also I tried my nextcloud installation with docker before manual nextcloud installation. "
 
