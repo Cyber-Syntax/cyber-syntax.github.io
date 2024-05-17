@@ -1,6 +1,6 @@
 # section information
 section:
-  name: About
+  name: Hakkımda
   id: about
   enable: true
   weight: 1
@@ -19,7 +19,9 @@ section:
 # resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'I am a passionate about becaming System Administrator. I love Linux and I am eager to enhance my knowledge of it. I love solving problems and automate things with python. I graduated from computer programming and I am currently studying Management Information Systems at Anadolu university. '
+summary: "
+I love Linux and I am eager to enhance my knowledge of it. I am a passionate about becaming System Administrator. I love solving problems and automate things with python. I graduated from computer programming and I am currently studying Management Information Systems at Anadolu university. 
+"
 
 # your social links
 # give as many as you want. use font-awesome for the icons.

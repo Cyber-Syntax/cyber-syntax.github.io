@@ -20,8 +20,8 @@ customMenus:
 
 # Specify OpenGraph Headers
 openGraph:
-  title: Cyber-Syntax's Resume and Blog
+  title: Cyber-Syntax
   type: website
   description: Portfolio and personal blog of Cyber-Syntax.
-  image: images/author/pp.jpg
+  image: images/author/pp-new.jpg
   url: https://hugo-toha.github.io

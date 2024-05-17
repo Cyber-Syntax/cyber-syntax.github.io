@@ -31,9 +31,9 @@ degrees:
 #     url: "#"
 
 
-- name: Pursuing Bachelor of Science in Management Information Systems 
+- name: Pursuing Undergraduate Degree in Management Information Systems 
   icon: fa-graduation-cap
-  timeframe: 2023-2025
+  timeframe: 2022-2025
   institution:
     name: University of Anadolu
     url: "#"
@@ -95,7 +95,7 @@ degrees:
   #     content: Fusce eu augue ut odio porttitor pulvinar.
   #
 
-- name: Associate of Science in Computer Programming 
+- name: Associate Degree in Computer Programming 
   icon: fa-graduation-cap
   timeframe: 2019-2021
   institution:

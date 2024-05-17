@@ -41,15 +41,13 @@ projects:
   summary: The script compresses specific directories into tar files. I needed to back up my important files to the cloud. Therefore, I wrote this script to backup and encrypt them. Additionally, I have made some enhancements such as decryption, encryption, and creating tar files.
   tags: ["python" ]
 
-
-
 - name: 🦄 my-unicorn
   #logo: /images/sections/projects/kubernetes.png
   role: Owner
   timeline: "March 2023 - Present"
   repo: https://github.com/Cyber-Syntax/my-unicorn # If your project is a public repo on GitHub, then provide this link. it will show star count.
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-  summary: Through my journey of learning Python, I created a script to automate the installation and updating of Appimage apps, incorporating SHA-{256-512} verification for security. I focused on enhancing the script by introducing features like creating a JSON file to easily add app versions, choices, names, and repository details, making it user-friendly for installation automation. Initially designed for three apps, I also included automatic installation for these apps. The script prompts users with questions like whether to create backups, facilitating JSON file creation. This project has been invaluable as it allowed me to delve into algorithms, such as looping through apps for updates. It’s not just a project but a significant learning experience that has shaped my Python skills, cementing its importance in my journey of growth and proficiency.
+  summary: I created a script to automate the installation and updating some of Appimage apps. Script creating a JSON file to easily add app versions, choices, names, and repository details, making it user-friendly for installation automation. It’s not just a project but a significant learning experience that has shaped my Python skills, cementing its importance in my journey of growth and proficiency.
   tags: ["python"]
 
 - name: 🛸 WallpaperChanger 

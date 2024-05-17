@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Education
+  name: Eğitim
   id: education
   template: sections/education.html # Use "sections/education-alt.html for alternate template.
   enable: true
@@ -31,9 +31,9 @@ degrees:
 #     url: "#"
 
 
-- name: Pursuing Bachelor of Science in Management Information Systems 
+- name: Pursuing Undergraduate Degree in Management Information Systems 
   icon: fa-graduation-cap
-  timeframe: 2023-2025
+  timeframe: 2022-2025
   institution:
     name: University of Anadolu
     url: "#"
@@ -95,9 +95,9 @@ degrees:
   #     content: Fusce eu augue ut odio porttitor pulvinar.
   #
 
-- name: Associate of Science in Computer Programming 
+- name: Associate Degree in Computer Programming 
   icon: fa-graduation-cap
-  timeframe: 2020-2021
+  timeframe: 2019-2021
   institution:
     name: University of Namik Kemal
     url: "#"
@@ -133,7 +133,6 @@ degrees:
   # - title: Fusce eu augue ut odio porttitor pulvinar.
   #   url: "#"
   extracurricularActivities: #(optional)
-  - Studied fundamental languages including C++, Visual Basic, and C#.
   - Acquired fundamental knowledge of SQL and practiced it through homework assignments.
   - Learned the fundamentals of virtualizing Linux on VMware and Virtualbox.
   - Learned web development fundamentals; HTML, CSS, and PHP. Also gained proficiency in using Joomla and WordPress.

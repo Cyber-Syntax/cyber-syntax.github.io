@@ -16,32 +16,33 @@ skills:
   summary: "He knows the most commonly used terminal commands and can troubleshoot common issues. He is passionate about Linux and eager to enhance his knowledge of it. He has several years of experience using Linux as his main operating system."
 
 - name: Python
-  logo: /images/sections/skills/python.png
+  logo: /images/sections/skills/python.svg
   summary: "Proficient in writing scripts, continuously enhancing my skills. Enthusiastic about utilizing Python to solve problems and automate repetitive tasks."
 
-- name: SQL
-  logo: /images/sections/skills/sql.png
-  summary: "Mastered fundamentals with school curriculum."
-
-- name: Web Development
-  logo: /images/sections/skills/html.png
-  summary: "Familiar with HTML and CSS, with introductory exposure to PHP; constructed a simple website using these technologies. I also developed websites using WordPress and Joomla."
-
-- name: C++
-  logo: /images/sections/skills/c++.png
-  summary: "Acquired fundamental knowledge through school curriculum."
+- name: Bash 
+  logo: /images/sections/skills/bash.svg
+  summary: "Fundamental knowledge of coding with the ability to utilize internet resources and AI assistance for problem-solving and code implementation. "
 
 - name: Git
   logo: /images/sections/skills/git.png
   summary: "I have experience with git-based development, primarily using GitHub. I learned Git when I needed to create Python scripts to solve problems. While I am still learning, I have a solid understanding of fundamental Git CLI usage."
 
-- name: Bash 
-  logo: /images/sections/skills/bash.png
-  summary: "Fundamental knowledge of coding with the ability to utilize internet resources and AI assistance for problem-solving and code implementation. "
-
 - name: Cloud Computing
-  logo: /images/sections/skills/cloud.png
+  logo: /images/sections/skills/cloud.svg
   summary: "I set up Fedora Server on my old laptop. I set up Nextcloud on a Fedora Server manually by configuring PHP, MySQL, and essential components."
+
+- name: Web Development
+  logo: /images/sections/skills/html.svg
+  summary: "Familiar with HTML and CSS, with introductory exposure to PHP; constructed a simple website using these technologies. I also developed websites using WordPress and Joomla."
+
+- name: SQL
+  logo: /images/sections/skills/sql.svg
+  summary: "Mastered fundamentals with school curriculum."
+
+- name: C++
+  logo: /images/sections/skills/c++.png
+  summary: "Acquired fundamental knowledge through school curriculum."
+
 
 # - name: Docker
 #   logo: /images/sections/skills/docker.svg

@@ -1,10 +1,10 @@
 # section information
 section:
-  name: Accomplishments
+  name: Başarılar 
   id: accomplishments
   enable: true
-  weight: 9
-  showOnNavbar: true
+  weight: 7
+  showOnNavbar: false
   # Can optionally hide the title in sections
   # hideTitle: true
 

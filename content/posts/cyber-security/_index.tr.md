@@ -3,7 +3,7 @@ title: Siber-Güvenlik
 menu:
   sidebar:
     name: Siber-Güvenlik
-    identifier: siber-güvenlik
+    identifier: cyber-security
     weight: 20
 ---
 
