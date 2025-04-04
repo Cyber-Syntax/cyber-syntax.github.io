@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[1485],{9176:e=>{e.exports=JSON.parse('{"tags":[{"label":"Security","permalink":"/tr/blog/tags/security","description":"Security related blogpostsn","count":1}]}')}}]);
