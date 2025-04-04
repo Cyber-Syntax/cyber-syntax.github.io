@@ -67,6 +67,17 @@ const projects: Project[] = [
   },
   // Add more project objects as necessary...
   {
+    id: "fedora-setup",
+    title: "🐚 fedora-setup",
+    link: "https://github.com/Cyber-Syntax/fedora-setup",
+    owner: "Owner",
+    date: "March 2025 - Present",
+    description:
+      "Bash script for fedora setup. It setup the fedora system with most useful apps, configurations. For example, grub timeout 0 configuration, installing apps, and setting up the system.",
+    tags: ["bash"],
+    category: ["all", "bash"],
+  },
+  {
     id: "WallpaperChanger",
     title: "🛸 WallpaperChanger",
     link: "https://github.com/Cyber-Syntax/WallpaperChanger",
@@ -102,9 +113,9 @@ const projects: Project[] = [
   {
     id: "find_final_grade",
     title: "💯 find_final_grade",
-    link: "https://github.com/Cyber-Syntax/my-unicorn",
+    link: "https://github.com/Cyber-Syntax/find_final_grade",
     owner: "Owner",
-    date: "Jan 2023 - Jan 2023",
+    date: "Jan 2023 - Jan 2025",
     description:
       "Created a Python script to determine how much grade I need to achieve on my final exam to pass my lesson, based on the mid-term score.",
     tags: ["python"],
@@ -113,7 +124,7 @@ const projects: Project[] = [
   {
     id: "dnf-update-status",
     title: "👒 dnf-update-status",
-    link: "https://github.com/Cyber-Syntax/my-unicorn",
+    link: "https://github.com/Cyber-Syntax/dot-files/blob/main/.config/waybar/dnf-update-status.py",
     owner: "Owner",
     date: "Feb 2024 - Feb 2024",
     description:
@@ -208,10 +219,14 @@ function ProjectPage() {
                         >
                           {project.title}
                         </h3>
+                        <div className="pagination-nav docusaurus-mt-md">
+                          <a className="text--left">{project.owner}</a>
+                          <a className="text--right">{project.date}</a>
+                        </div>
                       </div>
+
                       <div className="card__body">
                         <div className="sub-title">
-                          <span>{project.owner}</span>
                           <p>{project.description}</p>
                           <div className="project-tags-holder badge badge--primary">
                             {project.tags.map((tag, idx) => (
@@ -222,7 +237,10 @@ function ProjectPage() {
                           </div>
                         </div>
                       </div>
-                      <div className="card__footer row docusaurus-mt-lg">
+                      <div
+                        className="card__footer row docusaurus-mt-md
+                      "
+                      >
                         <div className="col col--9">
                           <a
                             href={project.link}
@@ -233,9 +251,6 @@ function ProjectPage() {
                             <span className="button__icon"></span>
                             Discover
                           </a>
-                        </div>
-                        <div className="text--right">
-                          <span>{project.date} </span>
                         </div>
                       </div>
                     </div>
