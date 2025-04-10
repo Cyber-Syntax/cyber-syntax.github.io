@@ -179,46 +179,46 @@ const config = {
       },
       footer: {
         style: "dark",
-        links: [
-          //{
-          //  title: "Docs",
-          //  items: [
-          //    {
-          //      label: "Wiki",
-          //      //to: "/docs",
-          //    },
-          //  ],
-          //},
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Mastodon",
-                href: "https://mastodon.social/@priv4cy",
-              },
-              {
-                label: "X",
-                href: "https://x.com/cyb_serif",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-            {
-              href: "https://github.com/Cyber-Syntax",
-              label: "GitHub",
-              position: "right",
-              className: "header--github-link",
-              "aria-label": "GitHub repository",
-            },
-            ],
-          },
-        ],
+        // links: [
+        //   //{
+        //   //  title: "Docs",
+        //   //  items: [
+        //   //    {
+        //   //      label: "Wiki",
+        //   //      //to: "/docs",
+        //   //    },
+        //   //  ],
+        //   //},
+        //   {
+        //     title: "Community",
+        //     items: [
+        //       {
+        //         label: "Mastodon",
+        //         href: "https://mastodon.social/@priv4cy",
+        //       },
+        //       {
+        //         label: "X",
+        //         href: "https://x.com/cyb_serif",
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: "More",
+        //     items: [
+        //       {
+        //         label: "Blog",
+        //         to: "/blog",
+        //       },
+        //     {
+        //       href: "https://github.com/Cyber-Syntax",
+        //       label: "GitHub",
+        //       position: "right",
+        //       className: "header--github-link",
+        //       "aria-label": "GitHub repository",
+        //     },
+        //     ],
+        //   },
+        // ],
         copyright: `Copyright © ${new Date().getFullYear()} Cyber-Syntax Personal Portfolio, Inc. Built with Docusaurus.`,
       },
       prism: {
