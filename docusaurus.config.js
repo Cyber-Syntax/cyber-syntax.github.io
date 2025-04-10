@@ -131,9 +131,9 @@ const config = {
         items: [
           // NAVBAR
           { type: "search", position: "right" },
-          { to: "educations", label: "My Education", position: "left" },
-          { to: "projects", label: "My Projects", position: "left" },
-          { to: "skills", label: "My Skills", position: "left" },
+          { to: "educations", label: "Education", position: "left"},
+          { to: "projects", label: "Projects", position: "left" },
+          { to: "skills", label: "Skills", position: "left" },
           {
             to: "nixos",
             position: "right",
@@ -162,11 +162,19 @@ const config = {
           },
 
           { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: "https://github.com/Cyber-Syntax",
-            label: "GitHub",
-            position: "right",
-          },
+          				{
+					'aria-label': 'GitHub Repository',
+					'className': 'header--github-link',
+					'href': 'https://github.com/Cyber-Syntax',
+					'position': 'right',
+				},
+          // {
+          //   // aria-label: "GitHub repository",
+          //   href: "https://github.com/Cyber-Syntax",
+          //   label: "GitHub",
+          //   position: "right",
+          //   className: "header--github-link",
+          // },
         ],
       },
       footer: {
@@ -201,10 +209,13 @@ const config = {
                 label: "Blog",
                 to: "/blog",
               },
-              {
-                label: "GitHub",
-                href: "https://github.com/cyber-syntax",
-              },
+            {
+              href: "https://github.com/Cyber-Syntax",
+              label: "GitHub",
+              position: "right",
+              className: "header--github-link",
+              "aria-label": "GitHub repository",
+            },
             ],
           },
         ],

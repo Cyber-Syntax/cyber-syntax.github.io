@@ -15,14 +15,30 @@ import { faGithub, faMastodon, faXTwitter } from '@fortawesome/free-brands-svg-i
 
 // Animated code comments that display in the background
 const codeComments = [
-  "// passionate about Linux and system administration",
-  "/* proficient in Python  */",
-  "// experienced with git-based development workflows",
-  "/* constantly learning  */",
-  "// familiar with web development technologies",
-  "/* background in MIS */",
-  "// always exploring new Linux distributions",
-  "/* committed to continuous improvement */",
+  "console.log('passionate about Linux and system administration');", // JavaScript
+  "print('proficient in Python')", // Python
+  "puts 'experienced with git-based development workflows'", // Ruby
+  "echo 'constantly learning';", // PHP
+  "printf(\"familiar with web development technologies\\n\");", // C
+  "System.out.println(\"background in MIS\");", // Java
+  "fmt.Println(\"always exploring new Linux distributions\")", // Go
+  "print(\"committed to continuous improvement\")", // Swift
+  "Console.WriteLine(\"open source advocate\");", // C#
+  "println(\"problem solver\")", // Kotlin
+  "putStrLn \"developer & system administrator\"", // Haskell
+  "echo 'Bash shell output'", // Bash
+  "print \"Perl: script starting\\n\";", // Perl
+  "cat('Linux is my enthusiast\\n')", // R
+  "println(\"I love open source\")", // Scala
+  "IO.puts \"Hello, World!\"", // Elixir
+  "std::cout << \"Hello, World!\" << std::endl;", // C++
+  "Write-Output 'nix-env -iA nixpkgs.hello'", // PowerShell
+  "println!(\"sudo apt install hello\");", // Rust
+  "print('sudo dnf install hello')", // Lua
+  "sudo pacman -S hello",
+  "nix-rebuild",
+  "console.log('Linux Enthusiast');", // TypeScript
+  "printfn \"Open Source Advocate\"" // F#
 ];
 
 // Typing effect phrases
@@ -39,7 +55,7 @@ const socialMediaLinks = [
   { name: "GitHub", icon: faGithub, url: "https://github.com/cyber-syntax" },
   { name: "Mastodon", icon: faMastodon, url: "https://mastodon.social/@priv4cy" },
   { name: "Twitter/X", icon: faXTwitter, url: "https://x.com/cyb_serif" },
-  { name: "Email", icon: faEnvelope, url: "mailto:contact@example.com" },
+  // { name: "Email", icon: faEnvelope, url: "mailto:contact@example.com" },
 ];
 
 // Core skills for About Me section with icons
@@ -121,14 +137,12 @@ function AboutMeSection() {
         <div className={styles.aboutMeContent}>
           <p>
             I'm passionate about Linux and system administration with a drive for continuous learning and improvement.
-            With expertise in Python and experience with git-based development workflows, I enjoy exploring the 
-            ever-evolving landscape of technology.
           </p>
-          
           <p>
-            My background in Management Information Systems (MIS) has provided me with a solid foundation for 
-            understanding both technical and business requirements. I'm familiar with web development technologies
-            and always exploring new Linux distributions to expand my knowledge.
+            I love automation with Python and shell scripting.
+           </p> 
+          <p>
+            I'm always exploring new technologies and tools to enhance my skill set.
           </p>
         </div>
       </div>
@@ -162,7 +176,7 @@ function HomepageHeader() {
           // Calculate position to favor sides
           const isLeftSide = index % 2 === 0;
           const xPosition = isLeftSide 
-            ? Math.random() * 25 + 5  // 5% to 30% for left side
+            ? Math.random() * 11 // 5% to 30% for left side
             : Math.random() * 25 + 60; // 70% to 95% for right side
             
           return (
@@ -170,8 +184,8 @@ function HomepageHeader() {
               key={index} 
               className={styles.codeComment} 
               style={{ 
-                animationDelay: `${index * 0.7}s`,
-                top: `${Math.random() * 80 + 10}%`,
+                animationDelay: `${index * 1.1}s`,
+                top: `${Math.random() * 80 }%`,
                 left: `${xPosition}%`,
                 opacity: 0.15 + (Math.random() * 0.1) // Increased opacity for better visibility
               }}
