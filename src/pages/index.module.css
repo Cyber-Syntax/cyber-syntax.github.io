@@ -3,6 +3,216 @@
  * and scoped locally.
  */
 
+/* Homepage container */
+.homepage {
+  overflow-x: hidden;
+  position: relative;
+  min-height: calc(100vh - var(--ifm-navbar-height));
+  background: var(--ifm-background-color);
+}
+
+/* Main hero section with animated background */
+.heroContainer {
+  padding: 5rem 2rem;
+  position: relative;
+  overflow: hidden;
+  background: var(--ifm-background-color);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animated background comments */
+.backgroundComments {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none; /* Ensures comments don't interfere with clicks */
+}
+
+.codeComment {
+  position: absolute;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 1.2rem;
+  font-weight: 600; /* Make text bolder */
+  color: var(--ifm-color-primary-darker);
+  transform: rotate(var(--rotation, -3deg));
+  opacity: 0;
+  animation: floatComment 15s linear infinite;
+  animation-delay: var(--animation-delay, 0s);
+  white-space: nowrap;
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5); /* Add slight glow for better visibility */
+}
+
+[data-theme="dark"] .codeComment {
+  color: var(--ifm-color-primary-light);
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7); /* Different shadow for dark mode */
+}
+
+@keyframes floatComment {
+  0% {
+    opacity: 0;
+    transform: translateY(15px) translateX(-5px) rotate(var(--rotation, -3deg));
+  }
+  5% {
+    opacity: var(--opacity, 0.15);
+  }
+  95% {
+    opacity: var(--opacity, 0.15);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15px) translateX(5px) rotate(var(--rotation, -3deg));
+  }
+}
+
+/* Hero content */
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, var(--ifm-color-primary-darker) 0%, var(--ifm-color-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeSlideDown 1s ease-out;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  color: var(--ifm-color-primary-dark);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeSlideDown 1s ease-out 0.3s both;
+}
+
+/* Button sections */
+.mainActions {
+  animation: fadeIn 1s ease-out 0.6s both;
+}
+
+.portfolioButtons {
+  margin-bottom: 1.5rem;
+}
+
+/* Wiki section with dropdown */
+.wikiSection {
+  margin-top: 2.5rem;
+  position: relative;
+}
+
+.wikiToggle {
+  background: none;
+  border: 2px solid var(--ifm-color-primary-light);
+  color: var(--ifm-color-primary-dark);
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.wikiToggle:hover {
+  background: rgba(var(--ifm-color-primary-rgb), 0.1);
+  transform: translateY(-2px);
+}
+
+.wikiToggleActive {
+  background: var(--ifm-color-primary-light);
+  color: white;
+}
+
+.wikiToggleIcon {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.wikiToggleActive .wikiToggleIcon {
+  transform: rotate(180deg);
+}
+
+.wikiButtonsContainer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-top: 0.5rem;
+}
+
+.wikiButtonsActive {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 1.5rem;
+}
+
+/* Feature section */
+.featureSection {
+  padding: 4rem 0;
+  background: var(--ifm-background-surface-color);
+  position: relative;
+  z-index: 3;
+}
+
+/* Animation keyframes */
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .heroContainer {
+    padding: 3rem 1rem;
+    min-height: 60vh;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .codeComment {
+    font-size: 0.9rem;
+  }
+}
+
+/* Legacy styles maintained for compatibility */
 .heroBanner {
   padding: 4rem 0;
   text-align: center;

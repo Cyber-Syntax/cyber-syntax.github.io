@@ -1,0 +1,294 @@
+{
+  "Hello! I am": {
+    "message": "Merhaba! Ben",
+    "description": "Greeting on homepage"
+  },
+  "theme.NotFound.title": {
+    "message": "Sayfa Bulunamadı",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "Aradığınız şeyi bulamadık.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Lütfen sizi orijinal URL'ye yönlendiren site sahibiyle iletişime geçin ve bağlantının bozuk olduğunu bildirin.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Kapat",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Blog listesi sayfa navigasyonu",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Yeni Yazılar",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Eski Yazılar",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Bir dakikalık okuma|{readingTime} dakikalık okuma",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Etiketler:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Devamını Oku",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Blog yazısı sayfa navigasyonu",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Önceki Yazı",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Sonraki Yazı",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Son yazılar",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Etiketler",
+    "description": "The title of the tag list page"
+  },
+  "theme.blog.post.plurals": {
+    "message": "Bir yazı|{count} yazı",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "\"{tagName}\" etiketli {nPosts} yazı",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Tüm Etiketleri Görüntüle",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Kodu panoya kopyala",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Kopyalandı",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Kopyala",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Kenar çubuğunu genişlet",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Kenar çubuğunu genişlet",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Döküman sayfaları navigasyonu",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Önceki",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Sonraki",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Kenar çubuğunu daralt",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Kenar çubuğunu daralt",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Bu, {siteTitle} {versionLabel} sürümü için henüz yayınlanmamış dokümantasyondur.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Bu, {siteTitle} {versionLabel} için dokümantasyondur ve artık aktif olarak sürdürülmemektedir.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Güncel dokümantasyon için {latestVersionLink} ({versionLabel}) sayfasını ziyaret edin.",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "en son sürüm",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Bu sayfayı düzenle",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Başlığa doğrudan bağlantı",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " {date} tarihinde",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " {user} tarafından",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Son güncelleme{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Ana menüye dön",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "Bu sayfada",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Ana içeriğe geç",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "A Melbourne University graduate who has a great passion for web development. While keeping updated with the most recent technologies, I always seek to improve and grow as a professional full-stack web developer as well as a person.": {
+    "message": "Web geliştirmeye büyük bir tutkusu olan bir Melbourne Üniversitesi mezunu. En son teknolojilerle güncel kalırken, profesyonel bir full-stack web geliştiricisi olarak gelişmeyi ve büyümeyi her zaman hedefliyorum.",
+    "description": "Bio description on homepage"
+  },
+  "My Skills:": {
+    "message": "Becerilerim:",
+    "description": "Skills section title"
+  },
+  "My Resume": {
+    "message": "Özgeçmişim",
+    "description": "Resume link text"
+  },
+  "Contact Me": {
+    "message": "İletişime Geç",
+    "description": "Contact link text"
+  },
+  "Experience": {
+    "message": "Deneyim",
+    "description": "Experience section title"
+  },
+  "Recent Projects": {
+    "message": "Son Projeler",
+    "description": "Projects section title"
+  },
+  "submit here": {
+    "message": "buradan gönder",
+    "description": "Submit link text"
+  },
+  "My Skills": {
+    "message": "Becerilerim",
+    "description": "Skills page title"
+  },
+  "Technical competencies I've developed": {
+    "message": "Geliştirdiğim teknik yetkinlikler",
+    "description": "Skills page subtitle"
+  },
+  "All": {
+    "message": "Tümü", 
+    "description": "Filter option"
+  },
+  "Sysadmin": {
+    "message": "Sistem Yönetimi",
+    "description": "Filter option"
+  },
+  "Developer": {
+    "message": "Geliştirici",
+    "description": "Filter option"
+  },
+  "No skills found for this filter.": {
+    "message": "Bu filtre için beceri bulunamadı.",
+    "description": "Empty state message for skills"
+  },
+  "My Projects": {
+    "message": "Projelerim",
+    "description": "Projects page title"
+  },
+  "A collection of projects I've worked on": {
+    "message": "Üzerinde çalıştığım projeler koleksiyonu",
+    "description": "Projects page subtitle"
+  },
+  "Python": {
+    "message": "Python",
+    "description": "Filter option"
+  },
+  "Bash": {
+    "message": "Bash",
+    "description": "Filter option"
+  },
+  "Project-contribution": {
+    "message": "Proje-katkısı",
+    "description": "Filter option"
+  },
+  "Archived": {
+    "message": "Arşivlenmiş",
+    "description": "Filter option"
+  },
+  "Show More": {
+    "message": "Daha Fazla Göster",
+    "description": "Show more button text"
+  },
+  "Show Less": {
+    "message": "Daha Az Göster",
+    "description": "Show less button text"
+  },
+  "Discover Project": {
+    "message": "Projeyi Keşfet",
+    "description": "Project link text"
+  },
+  "No projects found for this filter.": {
+    "message": "Bu filtre için proje bulunamadı.",
+    "description": "Empty state message for projects"
+  },
+  "My Education": {
+    "message": "Eğitimim",
+    "description": "Education page title"
+  },
+  "Academic journey and qualifications": {
+    "message": "Akademik yolculuk ve nitelikler",
+    "description": "Education page subtitle"
+  },
+  "Associate": {
+    "message": "Önlisans",
+    "description": "Education filter"
+  },
+  "Bachelor": {
+    "message": "Lisans",
+    "description": "Education filter"
+  },
+  "Courses Taken": {
+    "message": "Alınan Dersler",
+    "description": "Education section title"
+  },
+  "Extracurricular Activities": {
+    "message": "Ders Dışı Aktiviteler",
+    "description": "Education section title"
+  },
+  "No education found for this filter.": {
+    "message": "Bu filtre için eğitim bulunamadı.",
+    "description": "Empty state message for education"
+  },
+  "Owner": {
+    "message": "Sahibi",
+    "description": "Project owner label"
+  },
+  "Contributor": {
+    "message": "Katkıda Bulunan",
+    "description": "Project contributor label"
+  }
+}

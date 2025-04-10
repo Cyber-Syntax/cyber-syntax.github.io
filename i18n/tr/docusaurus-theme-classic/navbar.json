@@ -1,0 +1,38 @@
+{
+  "title": {
+    "message": "Cyber-Syntax",
+    "description": "The title in the navbar"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.Skills": {
+    "message": "Beceriler",
+    "description": "Navbar item with label Skills"
+  },
+  "item.label.Projects": {
+    "message": "Projeler",
+    "description": "Navbar item with label Projects"
+  },
+  "item.label.Education": {
+    "message": "Eğitim",
+    "description": "Navbar item with label Education"
+  },
+  "item.label.Docs": {
+    "message": "Belgeler",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.NixOS": {
+    "message": "NixOS",
+    "description": "Navbar item with label NixOS"
+  },
+  "item.label.Dev": {
+    "message": "Geliştirici",
+    "description": "Navbar item with label Dev"
+  }
+}
