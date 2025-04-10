@@ -205,7 +205,7 @@ function HomepageHeader() {
                 </Link>
               </div>
               
-              <div className={styles.wikiSection}>
+              <div className={`${styles.wikiSection} ${showWiki ? styles.active : ''}`}>
                 <button 
                   onClick={() => setShowWiki(!showWiki)}
                   className={`${styles.wikiToggle} ${showWiki ? styles.wikiToggleActive : ''}`}
@@ -221,29 +221,38 @@ function HomepageHeader() {
                 
                 <div className={`${styles.wikiButtonsContainer} ${showWiki ? styles.wikiButtonsActive : ''}`}>
                   <Link
-                    className={`${styles.btnBorderToLine} ${styles.btnBorderToLineText} ${styles.btnSecondary} margin-right--md margin-bottom--md`}
+                    className={`${styles.btnBorderToLine} ${styles.btnBorderToLineText} ${styles.btnSecondary}`}
                     to="/nixos"
                   >
                     <svg className={styles.btnBorder} xmlns="http://www.w3.org/2000/svg">
                       <rect height="100%" width="100%" />
                     </svg>
-                    My NixOS Wiki
+                    <svg className={styles.portfolioButtonIcon} width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2L1 9l11 7.5L22 9 12 2zm0 18l-9-6.2v-3.7l9 6.2 9-6.2v3.7l-9 6.2z"/>
+                    </svg>
+                    NixOS Wiki
                   </Link>
                   <Link
-                    className={`${styles.btnBorderToLine} ${styles.btnBorderToLineText} ${styles.btnSecondary} margin-right--md margin-bottom--md`}
+                    className={`${styles.btnBorderToLine} ${styles.btnBorderToLineText} ${styles.btnSecondary}`}
                     to="/dev"
                   >
                     <svg className={styles.btnBorder} xmlns="http://www.w3.org/2000/svg">
                       <rect height="100%" width="100%" />
                     </svg>
-                    My Developer Wiki
+                    <svg className={styles.portfolioButtonIcon} width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                    </svg>
+                    Dev Wiki
                   </Link>
                   <Link
-                    className={`${styles.btnBorderToLine} ${styles.btnBorderToLineText} ${styles.btnSecondary} margin-bottom--md`}
+                    className={`${styles.btnBorderToLine} ${styles.btnBorderToLineText} ${styles.btnSecondary}`}
                     to="/docs/intro"
                   >
                     <svg className={styles.btnBorder} xmlns="http://www.w3.org/2000/svg">
                       <rect height="100%" width="100%" />
+                    </svg>
+                    <svg className={styles.portfolioButtonIcon} width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
                     </svg>
                     Other Wiki
                   </Link>

@@ -87,7 +87,7 @@
 .heroSplitLayout {
   display: flex;
   width: 100%;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: center;
   gap: 3rem;
   margin-top: 2rem;
@@ -96,13 +96,15 @@
 .heroLeftSection {
   flex: 1;
   max-width: 500px;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .heroRightSection {
   flex: 1;
   max-width: 500px;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 /* About Me section */
@@ -284,22 +286,29 @@
   font-size: 16px;
   text-transform: uppercase;
   position: relative;
-  padding: 10px;
-  padding-top: 15px;
+  padding: 12px 20px;
   text-decoration: none;
   transition: all .6s ease-in;
-  background: transparent;
+  /* White background in light mode */
+  background-color: #ffffff !important;
   outline: none;
   border: 0;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+}
+
+[data-theme="dark"] .btnBorderToLineText {
+  background-color: var(--ifm-background-surface-color) !important;
 }
 
 .btnBorderToLineText:hover {
   font-weight: bold;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
 }
 
 .btnBorderToLineText svg.btnBorder {
@@ -308,6 +317,7 @@
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 1; /* Ensure the border is above the background */
 }
 
 .btnBorderToLineText rect {
@@ -359,8 +369,21 @@
 
 /* Wiki section with dropdown */
 .wikiSection {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   position: relative;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.wikiSection.active {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .wikiSection {
+  background: var(--ifm-background-surface-color);
 }
 
 .wikiToggle {
@@ -385,7 +408,7 @@
 
 .wikiToggleActive {
   background: var(--ifm-color-primary-light);
-}
+  }
 
 .wikiToggleIcon {
   margin-left: 8px;
@@ -402,6 +425,9 @@
   opacity: 0;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
 .wikiButtonsActive {
