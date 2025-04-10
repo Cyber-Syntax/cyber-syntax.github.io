@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Layout from "@theme/Layout";
-import "../css/portfolio/portfolio.css";
+import "../../css/portfolio/portfolio.css";
 
 //Typescript projects section
 interface Project {
@@ -19,20 +19,20 @@ const projects: Project[] = [
     id: "super-productivity",
     title: "🏆 super-productivity",
     link: "https://github.com/Cyber-Syntax/super-productivity",
-    owner: "Contributor",
-    date: "May 2023 - Present",
-    description: "Contributed as a translator for the Turkish language.",
-    tags: ["translation"],
+    owner: "Katkıda Bulunan",
+    date: "Mayıs 2023 - Günümüz",
+    description: "Türkçe dili için çevirmen olarak katkıda bulundum.",
+    tags: ["çeviri"],
     category: ["all", "project-contribution"],
   },
   {
     id: "autotarcompress",
     title: "🚀 AutoTarCompress",
     link: "https://github.com/Cyber-Syntax/AutoTarCompress",
-    owner: "Owner",
-    date: "Apr 2023 - Present",
+    owner: "Sahibi",
+    date: "Nisan 2023 - Günümüz",
     description:
-      "The script compresses specific directories into tar files. I needed to back up my important files to the cloud. Therefore, I wrote this script to backup and encrypt them. Additionally, I have made some enhancements such as decryption, encryption, and creating tar files.",
+      "Bu script belirli dizinleri tar dosyalarına sıkıştırır. Önemli dosyalarımı buluta yedeklemem gerekiyordu. Bu yüzden bu scripti yedeklemek ve şifrelemek için yazdım. Ayrıca şifre çözme, şifreleme ve tar dosyaları oluşturma gibi bazı geliştirmeler yaptım.",
     tags: ["python"],
     category: ["all", "python"],
   },
@@ -40,10 +40,10 @@ const projects: Project[] = [
     id: "my-unicorn",
     title: "🦄 my-unicorn",
     link: "https://github.com/Cyber-Syntax/my-unicorn",
-    owner: "Owner",
-    date: "March 2023 - Present",
+    owner: "Sahibi",
+    date: "Mart 2023 - Günümüz",
     description:
-      "I created a script to automate the installation and updating some of Appimage apps. Script creating a JSON file to easily add app versions, choices, names, and repository details, making it user-friendly for installation automation.",
+      "Bazı Appimage uygulamalarının kurulumunu ve güncellenmesini otomatikleştirmek için bir script oluşturdum. Script, kurulum otomasyonu için kullanıcı dostu hale getirerek uygulama sürümlerini, seçenekleri, adları ve depo detaylarını kolayca eklemek için bir JSON dosyası oluşturuyor.",
     tags: ["python"],
     category: ["all", "python"],
   },
@@ -51,10 +51,10 @@ const projects: Project[] = [
     id: "sink-change",
     title: "🚧 sink-change",
     link: "https://github.com/Cyber-Syntax/dot-files/blob/bare-repo/.config/qtile/scripts/sink-change.sh",
-    owner: "Owner",
-    date: "March 2023 - Present",
+    owner: "Sahibi",
+    date: "Mart 2023 - Günümüz",
     description:
-      "I wrote this script to adjust the sound output and display the volume in my window managers. It represents my first foray into bash scripting as I explore this new skill.",
+      "Pencere yöneticilerimde ses çıkışını ayarlamak ve ses seviyesini görüntülemek için bu scripti yazdım. Bu, bu yeni beceriyi keşfederken bash scriptlemeye ilk girişimi temsil ediyor.",
     tags: ["bash"],
     category: ["all", "bash"],
   },
@@ -62,10 +62,10 @@ const projects: Project[] = [
     id: "fedora-setup",
     title: "🐚 fedora-setup",
     link: "https://github.com/Cyber-Syntax/fedora-setup",
-    owner: "Owner",
-    date: "March 2025 - Present",
+    owner: "Sahibi",
+    date: "Mart 2025 - Günümüz",
     description:
-      "Bash script for fedora setup. It setup the fedora system with most useful apps, configurations. For example, grub timeout 0 configuration, installing apps, and setting up the system.",
+      "Fedora kurulumu için bash scripti. Fedora sistemini en kullanışlı uygulamalar ve yapılandırmalarla kurar. Örneğin, grub zaman aşımı 0 yapılandırması, uygulamaların kurulumu ve sistemin ayarlanması.",
     tags: ["bash"],
     category: ["all", "bash"],
   },
@@ -73,10 +73,10 @@ const projects: Project[] = [
     id: "WallpaperChanger",
     title: "🛸 WallpaperChanger",
     link: "https://github.com/Cyber-Syntax/WallpaperChanger",
-    owner: "Owner",
-    date: "March 2023 - Present",
+    owner: "Sahibi",
+    date: "Mart 2023 - Günümüz",
     description:
-      "This script changes the wallpaper based on the time of day. I have set wallpapers for my workdays and days off. During the midweek, the script changes my wallpaper to the designated workday wallpapers. On Sundays, the script switches to my day off wallpapers.",
+      "Bu script, günün saatine göre duvar kağıdını değiştirir. İş günlerim ve tatil günlerim için duvar kağıtları ayarladım. Hafta ortasında, script duvar kağıdımı belirlenen iş günü duvar kağıtlarına değiştirir. Pazar günleri, script tatil günü duvar kağıtlarıma geçer.",
     tags: ["python"],
     category: ["all", "python"],
   },
@@ -84,10 +84,10 @@ const projects: Project[] = [
     id: "siyuan-appimage-update",
     title: "🌟 siyuan-appimage-update",
     link: "https://github.com/Cyber-Syntax/siyuan-appimage-update",
-    owner: "Owner",
-    date: "Jan 2023 - Feb 2023",
+    owner: "Sahibi",
+    date: "Ocak 2023 - Şubat 2023",
     description:
-      "It’s installing latest siyuan app version and verifying sha256.",
+      "En son siyuan uygulama sürümünü kurar ve sha256'yı doğrular.",
     tags: ["python"],
     category: ["all", "python", "archived"],
   },
@@ -95,10 +95,10 @@ const projects: Project[] = [
     id: "superProductivity-appimage-update",
     title: "🌟 superProductivity-appimage-update",
     link: "https://github.com/Cyber-Syntax/superProductivity-appimage-update",
-    owner: "Owner",
-    date: "Feb 2023 - Feb 2023",
+    owner: "Sahibi",
+    date: "Şubat 2023 - Şubat 2023",
     description:
-      "It’s installing latest superProductivity app version and verifying sha512.",
+      "En son superProductivity uygulama sürümünü kurar ve sha512'yi doğrular.",
     tags: ["python"],
     category: ["all", "python", "archived"],
   },
@@ -106,10 +106,10 @@ const projects: Project[] = [
     id: "find_final_grade",
     title: "💯 find_final_grade",
     link: "https://github.com/Cyber-Syntax/find_final_grade",
-    owner: "Owner",
-    date: "Jan 2023 - Jan 2025",
+    owner: "Sahibi",
+    date: "Ocak 2023 - Ocak 2025",
     description:
-      "Created a Python script to determine how much grade I need to achieve on my final exam to pass my lesson, based on the mid-term score.",
+      "Vize sınav notuna dayanarak final sınavımda dersimi geçmek için ne kadar not almam gerektiğini belirlemek için bir Python scripti oluşturdum.",
     tags: ["python"],
     category: ["all", "python", "archived"],
   },
@@ -117,10 +117,10 @@ const projects: Project[] = [
     id: "dnf-update-status",
     title: "👒 dnf-update-status",
     link: "https://github.com/Cyber-Syntax/dot-files/blob/main/.config/waybar/dnf-update-status.py",
-    owner: "Owner",
-    date: "Feb 2024 - Feb 2024",
+    owner: "Sahibi",
+    date: "Şubat 2024 - Şubat 2024",
     description:
-      "Developed a Python script to monitor and display newly updated packages on the Fedora Linux distribution.",
+      "Fedora Linux dağıtımında yeni güncellenen paketleri izlemek ve görüntülemek için bir Python scripti geliştirdim.",
     tags: ["python"],
     category: ["all", "python", "archived"],
   },
@@ -148,7 +148,7 @@ function ProjectPage() {
   };
 
   return (
-    <Layout title="Projects" description="My projects">
+    <Layout title="Projeler" description="Projelerim">
       <nav
         className="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl"
         aria-label="Breadcrumbs"
@@ -159,7 +159,7 @@ function ProjectPage() {
           itemType="https://schema.org/BreadcrumbList"
         >
           <li className="breadcrumbs__item">
-            <a aria-label="Home page" className="breadcrumbs__link" href="/">
+            <a aria-label="Ana sayfa" className="breadcrumbs__link" href="/">
               <svg viewBox="0 0 24 24" className="breadcrumbHomeIcon_YNFT">
                 <path
                   d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"
@@ -175,7 +175,7 @@ function ProjectPage() {
             className="breadcrumbs__item breadcrumbs__item--active"
           >
             <span className="breadcrumbs__link" itemProp="name">
-              Projects
+              Projeler
             </span>
             <meta itemProp="position" content="1" />
           </li>
@@ -185,9 +185,9 @@ function ProjectPage() {
       <main className="container">
         <section className="portfolio-section">
           <div className="portfolio-header">
-            <h1 className="portfolio-title">My Projects</h1>
+            <h1 className="portfolio-title">Projelerim</h1>
             <p className="portfolio-subtitle">
-              A collection of projects I've worked on
+              Üzerinde çalıştığım projelerin bir koleksiyonu
             </p>
           </div>
 
@@ -204,7 +204,10 @@ function ProjectPage() {
                 onClick={() => setActiveFilter(filter)}
                 className={`portfolio-tab ${activeFilter === filter ? 'portfolio-tab-active' : ''}`}
               >
-                {filter.charAt(0).toUpperCase() + filter.slice(1)}
+                {filter === "all" ? "Tümü" : 
+                 filter === "project-contribution" ? "Proje Katkıları" :
+                 filter === "archived" ? "Arşivlenmiş" : 
+                 filter.charAt(0).toUpperCase() + filter.slice(1)}
               </button>
             ))}
           </div>
@@ -235,7 +238,7 @@ function ProjectPage() {
                       className="show-more-button" 
                       onClick={() => toggleCardExpansion(project.id)}
                     >
-                      {expandedCards[project.id] ? 'Show Less' : 'Show More'}
+                      {expandedCards[project.id] ? 'Daha Az Göster' : 'Daha Fazla Göster'}
                     </button>
                   )}
                   <div className="card-tags">
@@ -254,14 +257,14 @@ function ProjectPage() {
                     rel="noopener noreferrer"
                     className="button button--primary button--outline"
                   >
-                    Discover Project
+                    Projeyi Keşfet
                   </a>
                 </div>
               </div>
             ))}
             {displayedProjects.length === 0 && (
               <div className="text--center" style={{ gridColumn: "1 / -1", padding: "2rem" }}>
-                No projects found for this filter.
+                Bu filtre için proje bulunamadı.
               </div>
             )}
           </div>

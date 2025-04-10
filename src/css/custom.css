@@ -6,25 +6,241 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Nord blue color scheme */
+  --ifm-color-primary: #5E81AC;
+  --ifm-color-primary-dark: #4C6A92;
+  --ifm-color-primary-darker: #435C81;
+  --ifm-color-primary-darkest: #3B5069;
+  --ifm-color-primary-light: #81A1C1;
+  --ifm-color-primary-lighter: #88C0D0;
+  --ifm-color-primary-lightest: #8FBCBB;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #81A1C1;
+  --ifm-color-primary-dark: #5E81AC;
+  --ifm-color-primary-darker: #4C6A92;
+  --ifm-color-primary-darkest: #3B5069;
+  --ifm-color-primary-light: #88C0D0;
+  --ifm-color-primary-lighter: #8FBCBB;
+  --ifm-color-primary-lightest: #ECEFF4;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  
+  /* Override Docusaurus dark theme variables with Nord color palette */
+  --ifm-background-color: #2E3440 !important;
+  --ifm-background-surface-color: #3B4252 !important;
+  --ifm-footer-background-color: #2E3440 !important;
+  --ifm-menu-color-background-active: #4C566A !important;
+  --ifm-menu-color-background-hover: #434C5E !important;
+  --ifm-card-background-color: #3B4252 !important;
+  --ifm-toc-border-color: #4C566A !important;
+  --ifm-color-content: #E5E9F0 !important;
+  --ifm-color-content-secondary: #D8DEE9 !important;
+  --ifm-breadcrumb-color-active: #88C0D0 !important;
+  --ifm-code-background: #4C566A !important;
+  --ifm-dropdown-background-color: #3B4252 !important;
+  --ifm-hover-overlay: #434C5E !important;
+}
+
+/* Dark mode override for specific elements */
+[data-theme="dark"] .footer {
+  background-color: #2E3440 !important;
+  border-top: 1px solid #3B4252;
+}
+
+[data-theme="dark"] .card {
+  background-color: #3B4252 !important;
+  border-color: #434C5E !important;
+}
+
+[data-theme="dark"] .table-of-contents {
+  border-left-color: #4C566A !important;
+}
+
+[data-theme="dark"] .table-of-contents__link:hover {
+  color: #88C0D0 !important;
+}
+
+[data-theme="dark"] code {
+  background-color: #4C566A !important;
+  color: #ECEFF4 !important;
+}
+
+[data-theme="dark"] .button--secondary {
+  background-color: #3B4252 !important;
+  border-color: #5E81AC !important;
+  color: #E5E9F0 !important;
+}
+
+[data-theme="dark"] .button--secondary:hover {
+  background-color: #434C5E !important;
+  border-color: #81A1C1 !important;
+}
+
+[data-theme="dark"] .pagination-nav__link {
+  background-color: #3B4252 !important;
+  border-color: #4C566A !important;
+}
+
+[data-theme="dark"] .pagination-nav__link:hover {
+  background-color: #434C5E !important;
+}
+
+[data-theme="dark"] .dropdown__menu {
+  background-color: #3B4252 !important;
+  border-color: #4C566A !important;
+}
+
+[data-theme="dark"] .alert--info {
+  background-color: rgba(136, 192, 208, 0.15) !important;
+  border-color: #88C0D0 !important;
+  color: #E5E9F0 !important;
+}
+
+/* Custom homepage styling */
+.homepage-main {
+  background: linear-gradient(to bottom, #f7f9fb, #edf0f5);
+}
+
+[data-theme="dark"] .homepage-main {
+  background: linear-gradient(to bottom, #2E3440, #3B4252);
+}
+
+.homepage-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.homepage-title {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary-dark);
+  animation: slideDown 0.8s ease-out;
+}
+
+.homepage-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  color: var(--ifm-color-primary);
+  animation: slideDown 0.8s ease-out 0.2s;
+  animation-fill-mode: both;
+}
+
+.homepage-buttons-section {
+  margin: 2.5rem 0;
+  animation: fadeIn 1s ease-out;
+  animation-fill-mode: both;
+}
+
+.homepage-buttons-section:first-of-type {
+  animation-delay: 0.4s;
+}
+
+.homepage-buttons-section:last-of-type {
+  animation-delay: 0.6s;
+}
+
+.homepage-buttons-title {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: var(--ifm-color-primary-darker);
+}
+
+.homepage-feature-section {
+  padding: 1rem 0 3rem;
+  background: var(--ifm-background-surface-color);
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+  animation: slideUp 1s ease-out 0.8s;
+  animation-fill-mode: both;
+}
+
+/* Custom search button styling */
+.navbar__search-input {
+  border-radius: 20px;
+  padding-left: 2.5rem;
+  background-color: rgba(94, 129, 172, 0.05);
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.navbar__search-input:focus {
+  background-color: #fff;
+  border-color: var(--ifm-color-primary);
+}
+
+[data-theme="dark"] .navbar__search-input {
+  background-color: rgba(129, 161, 193, 0.1);
+}
+
+[data-theme="dark"] .navbar__search-input:focus {
+  background-color: #3B4252;
+}
+
+.theme-edit-this-page {
+  color: var(--ifm-color-primary);
+}
+
+/* Simple active button effect for navbar links */
+.navbar__link--active {
+  position: relative;
+}
+
+.navbar__link--active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 3px;
+  background-color: var(--ifm-color-primary);
+  border-radius: 1.5px;
+}
+
+[data-theme="dark"] .navbar__link--active::after {
+  background-color: var(--ifm-color-primary-light);
+}
+
+/* Exclude the dropdown button from the line effect */
+.navbar__item.dropdown .navbar__link--active::after {
+  display: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

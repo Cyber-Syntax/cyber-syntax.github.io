@@ -123,7 +123,7 @@ const config = {
       },
       navbar: {
         title: "Cyber-Syntax",
-        hideOnScroll: true,
+        hideOnScroll: false,
         //logo: {
         //  alt: "My Site Logo",
         //  src: "img/logo.svg",

@@ -1,44 +1,45 @@
 import clsx from "clsx";
 import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
+import React, { useEffect, useState } from 'react';
 
 const FeatureList = [
   {
-    //title: "Easy to Use",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
-    description: (
-      <>
-        I graduated from computer programming and I am currently studying
-        Management Information Systems at Anadolu university.
-      </>
-    ),
+    icon: "🎓",
+    title: "Education",
+    description:
+      "I graduated from computer programming and I am currently studying Management Information Systems at Anadolu university.",
   },
   {
-    //title: "Focus on What Matters",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
-    description: (
-      <>I love Linux and I am eager to enhance my knowledge of it.</>
-    ),
+    icon: "🐧",
+    title: "Linux Enthusiast",
+    description:
+      "I love Linux and I am eager to enhance my knowledge of it.",
   },
   {
-    //title: "Powered by React",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-    description: (
-      <>
-        I am a passionate about becaming Linux System Administrator. I love
-        solving problems and automate things with python.
-      </>
-    ),
+    icon: "⚙️",
+    title: "System Administrator",
+    description:
+      "I am passionate about becoming a Linux System Administrator. I love solving problems and automating things with Python.",
   },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({ icon, title, description, isVisible, index }) {
   return (
-    <div className={clsx("col col--4")}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+    <div 
+      className={clsx(
+        "col col--4",
+        styles.featureItem,
+        isVisible ? styles.featureVisible : ''
+      )}
+      style={{
+        animationDelay: `${index * 0.2}s`
+      }}
+    >
+      <div className={styles.featureIcon}>
+        <span>{icon}</span>
       </div>
-      <div className="text--center padding-horiz--md">
+      <div className={styles.featureContent}>
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
@@ -47,12 +48,29 @@ function Feature({ Svg, title, description }) {
 }
 
 export default function HomepageFeatures() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Trigger animation after component mounts
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <section className={styles.features}>
       <div className="container">
+        <Heading as="h2" className={styles.featuresTitle}>About Me</Heading>
         <div className="row">
           {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+            <Feature 
+              key={idx} 
+              {...props} 
+              isVisible={isVisible}
+              index={idx} 
+            />
           ))}
         </div>
       </div>

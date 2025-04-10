@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Layout from "@theme/Layout";
-import "../css/portfolio/portfolio.css";
+import "../../css/portfolio/portfolio.css";
 
 //Typescript education section
 interface Education {
@@ -14,72 +14,72 @@ interface Education {
 
 const educations: Education[] = [
   {
-    id: "University of Anadolu",
+    id: "Anadolu Üniversitesi",
     category: ["all", "bachelor"],
     date: "2022-2025",
-    title: "Pursuing Undergraduate Degree in Management Information Systems",
+    title: "Yönetim Bilişim Sistemleri Lisans Eğitimi Devam Ediyor",
     taken_courses: [
-      "Advanced Programming",
-      "Database Programming",
-      "Internet And Web Programming",
-      "New Trends in Programming",
-      "Database Systems",
-      "Social Network Analysis",
-      "Data Mining",
-      "Project Management",
-      "User Experience Design",
-      "Enterprise Resource Planning Systems",
-      "System Analysis and Design",
-      "Process Table Programming",
-      "Production Management",
-      "Digital Transformation",
-      "Brand and Management",
-      "Organizational Behavior",
-      "Network Management and Information Security",
-      "Entrepreneurship and Starting a Business",
-      "Innovation Management",
-      "Operations Research",
-      "Decision Models",
-      "Financial Statements Analysis",
-      "Customer Relations Management",
-      "Decision Support Systems",
+      "İleri Programlama",
+      "Veritabanı Programlama",
+      "İnternet ve Web Programlama",
+      "Programlamada Yeni Eğilimler",
+      "Veritabanı Sistemleri",
+      "Sosyal Ağ Analizi",
+      "Veri Madenciliği",
+      "Proje Yönetimi",
+      "Kullanıcı Deneyimi Tasarımı",
+      "Kurumsal Kaynak Planlama Sistemleri",
+      "Sistem Analizi ve Tasarımı",
+      "Süreç Tablosu Programlama",
+      "Üretim Yönetimi",
+      "Dijital Dönüşüm",
+      "Marka ve Yönetim",
+      "Örgütsel Davranış",
+      "Ağ Yönetimi ve Bilgi Güvenliği",
+      "Girişimcilik ve İş Kurma",
+      "İnovasyon Yönetimi",
+      "Yöneylem Araştırması",
+      "Karar Modelleri",
+      "Finansal Tablolar Analizi",
+      "Müşteri İlişkileri Yönetimi",
+      "Karar Destek Sistemleri",
     ],
     extracurricular_activities: [
-      "Enhanced my English proficiency from intermediate to fluent.",
-      "Completed CS50's Introduction to Programming with Python course.",
-      "Developed scripts in Python and Bash to enhance skills in automation and problem-solving.",
-      "Expanded my knowledge of networking.",
-      "Engaged in Cybermentor's 'Zero to Hero' course to acquire knowledge in network penetration testing and fundamental cybersecurity principles.",
-      "Having used Linux as my main operating system for almost four years, I have successfully resolved numerous Linux-related issues and explored various Linux distributions.",
-      "Acquired knowledge in Gentoo, Arch, Debian, NixOS and Fedora to expand my Linux expertise, with substantial progress in Fedora and Arch.",
+      "İngilizce yeterliliğimi orta seviyeden akıcı seviyeye yükselttim.",
+      "CS50'nin Python ile Programlamaya Giriş kursunu tamamladım.",
+      "Otomasyon ve problem çözme becerilerini geliştirmek için Python ve Bash betikleri geliştirdim.",
+      "Ağ konusundaki bilgilerimi genişlettim.",
+      "Cybermentor'un 'Sıfırdan Uzmanlığa' kursuna katılarak ağ penetrasyon testleri ve temel siber güvenlik ilkeleri konusunda bilgi edindim.",
+      "Neredeyse dört yıldır ana işletim sistemi olarak Linux kullanarak, çok sayıda Linux ile ilgili sorunu başarıyla çözdüm ve çeşitli Linux dağıtımlarını keşfettim.",
+      "Linux uzmanlığımı genişletmek için Gentoo, Arch, Debian, NixOS ve Fedora konusunda bilgi edindim ve Fedora ve Arch'ta önemli ilerleme kaydettim.",
     ],
   },
   {
-    id: "University of Namik Kemal",
+    id: "Namık Kemal Üniversitesi",
     category: ["all", "associate"],
     date: "2019-2021",
-    title: "Associate Degree in Computer Programming",
+    title: "Bilgisayar Programcılığı Ön Lisans Derecesi",
     taken_courses: [
-      "Computer Hardware",
-      "Object Oriented Programming",
-      "Data Structures and Programming",
-      "Database",
-      "Artificial Neural Networks",
-      "System Programming",
-      "Internet Programming",
-      "System Analysis and Design",
-      "Visual Programming",
-      "Professional Foreign Language (English)",
-      "Math",
-      "Principles of Atatürk and History of Turkish Revolution",
-      "Turkish Language",
+      "Bilgisayar Donanımı",
+      "Nesne Yönelimli Programlama",
+      "Veri Yapıları ve Programlama",
+      "Veritabanı",
+      "Yapay Sinir Ağları",
+      "Sistem Programlama",
+      "İnternet Programlama",
+      "Sistem Analizi ve Tasarımı",
+      "Görsel Programlama",
+      "Mesleki Yabancı Dil (İngilizce)",
+      "Matematik",
+      "Atatürk İlkeleri ve Türk İnkılap Tarihi",
+      "Türk Dili",
     ],
     extracurricular_activities: [
-      "Acquired fundamental knowledge of SQL and practiced it through homework assignments.",
-      "Learned the fundamentals of virtualizing Linux on VMware and Virtualbox.",
-      "Learned web development fundamentals; HTML, CSS, and PHP. Also gained proficiency in using Joomla and WordPress.",
-      "Learned how programming languages function and the underlying processes in computer programming.",
-      "Learned desktop and laptop maintenance, including cleaning and applying thermal paste. ",
+      "SQL'in temellerini öğrendim ve ödev çalışmalarıyla pratik yaptım.",
+      "VMware ve Virtualbox üzerinde Linux sanallaştırmanın temellerini öğrendim.",
+      "Web geliştirmenin temellerini öğrendim; HTML, CSS ve PHP. Ayrıca Joomla ve WordPress kullanma konusunda yetkinlik kazandım.",
+      "Programlama dillerinin nasıl çalıştığını ve bilgisayar programlamadaki temel süreçleri öğrendim.",
+      "Temizlik ve termal macun uygulaması dahil olmak üzere masaüstü ve dizüstü bilgisayar bakımını öğrendim.",
     ],
   },
 ];
@@ -96,7 +96,7 @@ function EducationPage() {
   }, [activeFilter]);
 
   return (
-    <Layout title="Education" description="My Education">
+    <Layout title="Eğitim" description="Eğitimim">
       <nav
         className="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl"
         aria-label="Breadcrumbs"
@@ -107,7 +107,7 @@ function EducationPage() {
           itemType="https://schema.org/BreadcrumbList"
         >
           <li className="breadcrumbs__item">
-            <a aria-label="Home page" className="breadcrumbs__link" href="/">
+            <a aria-label="Ana sayfa" className="breadcrumbs__link" href="/">
               <svg viewBox="0 0 24 24" className="breadcrumbHomeIcon_YNFT">
                 <path
                   d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"
@@ -123,7 +123,7 @@ function EducationPage() {
             className="breadcrumbs__item breadcrumbs__item--active"
           >
             <span className="breadcrumbs__link" itemProp="name">
-              Education
+              Eğitim
             </span>
             <meta itemProp="position" content="1" />
           </li>
@@ -133,9 +133,9 @@ function EducationPage() {
       <main className="container">
         <section className="portfolio-section">
           <div className="portfolio-header">
-            <h1 className="portfolio-title">My Education</h1>
+            <h1 className="portfolio-title">Eğitimim</h1>
             <p className="portfolio-subtitle">
-              Academic journey and qualifications
+              Akademik yolculuğum ve niteliklerim
             </p>
           </div>
 
@@ -146,7 +146,7 @@ function EducationPage() {
                 onClick={() => setActiveFilter(filter)}
                 className={`portfolio-tab ${activeFilter === filter ? 'portfolio-tab-active' : ''}`}
               >
-                {filter.charAt(0).toUpperCase() + filter.slice(1)}
+                {filter === "all" ? "Tümü" : filter === "associate" ? "Ön Lisans" : "Lisans"}
               </button>
             ))}
           </div>
@@ -168,7 +168,7 @@ function EducationPage() {
                   </div>
 
                   <div className="education-details">
-                    <h4 className="education-section-title">Courses Taken</h4>
+                    <h4 className="education-section-title">Alınan Dersler</h4>
                     <ul className="education-list">
                       {education.taken_courses.map((course, courseIndex) => (
                         <li key={courseIndex} className="education-list-item">
@@ -178,7 +178,7 @@ function EducationPage() {
                     </ul>
 
                     <div className="education-activities">
-                      <h4 className="education-section-title">Extracurricular Activities</h4>
+                      <h4 className="education-section-title">Ders Dışı Etkinlikler</h4>
                       {education.extracurricular_activities.map((activity, activityIndex) => (
                         <p key={activityIndex} className="education-list-item" style={{ marginBottom: '0.5rem' }}>
                           {activity.trim()}
@@ -191,7 +191,7 @@ function EducationPage() {
             ))}
             {displayedEducation.length === 0 && (
               <div className="text--center" style={{ padding: "2rem" }}>
-                No education found for this filter.
+                Bu filtre için eğitim bilgisi bulunamadı.
               </div>
             )}
           </div>

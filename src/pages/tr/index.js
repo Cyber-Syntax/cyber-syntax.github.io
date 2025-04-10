@@ -4,7 +4,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
-import styles from "./index.module.css";
+import styles from "../index.module.css";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -16,49 +16,49 @@ function HomepageHeader() {
       <p className="homepage-subtitle">{siteConfig.tagline}</p>
 
       <div className="homepage-buttons-section">
-        <h2 className="homepage-buttons-title">Documentation & Resources</h2>
+        <h2 className="homepage-buttons-title">Dokümantasyon & Kaynaklar</h2>
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg padding-horiz--md margin-right--md margin-bottom--md"
             to="/nixos"
           >
-            My NixOS Wiki
+            NixOS Vikim
           </Link>
           <Link
             className="button button--primary button--lg padding-horiz--md margin-right--md margin-bottom--md"
             to="/dev"
           >
-            My Developer Wiki
+            Geliştirici Vikim
           </Link>
           <Link
             className="button button--primary button--lg padding-horiz--md margin-bottom--md"
             to="/docs/intro"
           >
-            Other Wiki
+            Diğer Vikiler
           </Link>
         </div>
       </div>
       
       <div className="homepage-buttons-section">
-        <h2 className="homepage-buttons-title">Portfolio</h2>
+        <h2 className="homepage-buttons-title">Portföy</h2>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg padding-horiz--md margin-right--md margin-bottom--md"
             to="/projects"
           >
-            My Projects
+            Projelerim
           </Link>
           <Link
             className="button button--secondary button--lg padding-horiz--md margin-right--md margin-bottom--md"
             to="/skills"
           >
-            My Skills
+            Becerilerim
           </Link>
           <Link
             className="button button--secondary button--lg padding-horiz--md margin-bottom--md"
             to="/educations"
           >
-            My Education
+            Eğitimim
           </Link>
         </div>
       </div>
@@ -70,8 +70,8 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} - Portfolio`}
-      description="Cyber-Syntax's personal portfolio and wiki site"
+      title={`${siteConfig.title} - Portföy`}
+      description="Cyber-Syntax'in kişisel portföy ve viki sitesi"
     >
       <main className="homepage-main">
         <HomepageHeader />
