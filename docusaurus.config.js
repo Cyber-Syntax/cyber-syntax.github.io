@@ -11,7 +11,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Cyber-Syntax Portfolio",
-  tagline: "I love linux.",
+  // tagline: "I love linux.",
   favicon: "img/favicon.ico",
 
   //plugins: ["docusaurus-plugin-sass"],
