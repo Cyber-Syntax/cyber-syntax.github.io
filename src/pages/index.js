@@ -252,10 +252,13 @@ function AboutMeSection() {
   return (
     <div className={styles.aboutMeSection}>
       <div className={styles.cyberHeader}>
-        <div className={styles.cyberHeaderBar}>
-          <span className={styles.cyberHeaderDot}></span>
-          <span className={styles.cyberHeaderDot}></span>
-          <span className={styles.cyberHeaderDot}></span>
+        <div className={styles.cyberTerminalHeader}>
+          <span className={styles.cyberTerminalTitle}>cyber-terminal</span>
+          <div className={styles.cyberTerminalButtons}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
         <div className={styles.cyberHeaderMain}>
           <div className={styles.cyberHeaderDecoration}>
@@ -348,7 +351,6 @@ function HomepageHeader() {
         <Heading as="h1" className={styles.cyberHeroTitle}>
           <span className={styles.cyberGlowText}>{siteConfig.title}</span>
         </Heading>
-        <p className={styles.cyberHeroSubtitle}>{siteConfig.tagline || "Secure. Automate. Innovate."}</p>
         
         {/* TypeWriter effect */}
         <TypeWriter />
