@@ -32,7 +32,7 @@ const projects: Project[] = [
     owner: "Owner",
     date: "Apr 2023 - Present",
     description:
-      "The script compresses specific directories into tar files. I needed to back up my important files to the cloud. Therefore, I wrote this script to backup and encrypt them. Additionally, I have made some enhancements such as decryption, encryption, and creating tar files.",
+      "This script compresses specific directories into tar files. I created it to back up my important files to the cloud. I've enhanced it with features like encryption, decryption, and tar file creation.",
     tags: ["python"],
     category: ["all", "python"],
   },
@@ -43,7 +43,7 @@ const projects: Project[] = [
     owner: "Owner",
     date: "March 2023 - Present",
     description:
-      "I created a script to automate the installation and updating some of Appimage apps. Script creating a JSON file to easily add app versions, choices, names, and repository details, making it user-friendly for installation automation.",
+      "I created a script to automate the installation and updating of AppImage apps. The script generates a JSON file to easily manage app versions, choices, names, and repository details, making it user-friendly for installation automation.",
     tags: ["python"],
     category: ["all", "python"],
   },
@@ -54,7 +54,7 @@ const projects: Project[] = [
     owner: "Owner",
     date: "March 2023 - Present",
     description:
-      "I wrote this script to adjust the sound output and display the volume in my window managers. It represents my first foray into bash scripting as I explore this new skill.",
+      "I wrote this script to adjust the sound output and display the volume in my window managers. It represents my first foray into bash scripting as I explored this new skill.",
     tags: ["bash"],
     category: ["all", "bash"],
   },
@@ -65,7 +65,7 @@ const projects: Project[] = [
     owner: "Owner",
     date: "March 2025 - Present",
     description:
-      "Bash script for fedora setup. It setup the fedora system with most useful apps, configurations. For example, grub timeout 0 configuration, installing apps, and setting up the system.",
+      "Bash script for Fedora setup. It configures the Fedora system with useful apps and configurations, including setting grub timeout to 0, installing applications, and configuring system settings.",
     tags: ["bash"],
     category: ["all", "bash"],
   },
@@ -76,7 +76,7 @@ const projects: Project[] = [
     owner: "Owner",
     date: "March 2023 - Present",
     description:
-      "This script changes the wallpaper based on the time of day. I have set wallpapers for my workdays and days off. During the midweek, the script changes my wallpaper to the designated workday wallpapers. On Sundays, the script switches to my day off wallpapers.",
+      "This script changes the wallpaper based on the time of day. I've set different wallpapers for my workdays and days off. During weekdays, the script displays my workday wallpapers, while on Sundays, it switches to my day-off wallpapers.",
     tags: ["python"],
     category: ["all", "python"],
   },
@@ -87,7 +87,7 @@ const projects: Project[] = [
     owner: "Owner",
     date: "Jan 2023 - Feb 2023",
     description:
-      "It’s installing latest siyuan app version and verifying sha256.",
+      "This script installs the latest SiYuan app version and verifies its SHA256 checksum.",
     tags: ["python"],
     category: ["all", "python", "archived"],
   },
@@ -98,7 +98,7 @@ const projects: Project[] = [
     owner: "Owner",
     date: "Feb 2023 - Feb 2023",
     description:
-      "It’s installing latest superProductivity app version and verifying sha512.",
+      "This script installs the latest Super Productivity app version and verifies its SHA512 checksum.",
     tags: ["python"],
     category: ["all", "python", "archived"],
   },
@@ -109,7 +109,7 @@ const projects: Project[] = [
     owner: "Owner",
     date: "Jan 2023 - Jan 2025",
     description:
-      "Created a Python script to determine how much grade I need to achieve on my final exam to pass my lesson, based on the mid-term score.",
+      "Created a Python script to determine how much I need to score on my final exam to pass a course, based on my mid-term score.",
     tags: ["python"],
     category: ["all", "python", "archived"],
   },
@@ -127,18 +127,18 @@ const projects: Project[] = [
 ];
 
 function ProjectPage() {
-  const [activeFilter, setActiveFilter] = React.useState<string>("all");
-  const [displayedProjects, setDisplayedProjects] = React.useState<Project[]>([]);
-  const [expandedCards, setExpandedCards] = useState<{[key: string]: boolean}>({});
+  const [_activeFilter, setActiveFilter] = React.useState<string>("all");
+  const [_displayedProjects, setDisplayedProjects] = React.useState<Project[]>([]);
+  const [_expandedCards, setExpandedCards] = useState<{[key: string]: boolean}>({});
 
   useEffect(() => {
     const filtered = projects.filter((project) =>
-      activeFilter === "all" ? true : project.category.includes(activeFilter)
+      _activeFilter === "all" ? true : project.category.includes(_activeFilter)
     );
     setDisplayedProjects(filtered);
     // Reset expanded state when filter changes
     setExpandedCards({});
-  }, [activeFilter]);
+  }, [_activeFilter]);
 
   const toggleCardExpansion = (projectId: string) => {
     setExpandedCards(prev => ({
@@ -169,7 +169,7 @@ function ProjectPage() {
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`portfolio-tab ${activeFilter === filter ? 'portfolio-tab-active' : ''}`}
+                className={`portfolio-tab ${_activeFilter === filter ? 'portfolio-tab-active' : ''}`}
               >
                 {filter.charAt(0).toUpperCase() + filter.slice(1)}
               </button>
@@ -177,7 +177,7 @@ function ProjectPage() {
           </div>
 
           <div className="portfolio-grid">
-            {displayedProjects.map((project, index) => (
+            {_displayedProjects.map((project, index) => (
               <div
                 key={project.id}
                 className="portfolio-card"
@@ -194,7 +194,7 @@ function ProjectPage() {
                 </div>
 
                 <div className="card-body">
-                  <p className={`card-description ${expandedCards[project.id] ? 'expanded' : ''}`}>
+                  <p className={`card-description ${_expandedCards[project.id] ? 'expanded' : ''}`}>
                     {project.description}
                   </p>
                   {project.description.length > 150 && (
@@ -202,7 +202,7 @@ function ProjectPage() {
                       className="show-more-button" 
                       onClick={() => toggleCardExpansion(project.id)}
                     >
-                      {expandedCards[project.id] ? 'Show Less' : 'Show More'}
+                      {_expandedCards[project.id] ? 'Show Less' : 'Show More'}
                     </button>
                   )}
                   <div className="card-tags">
@@ -226,7 +226,7 @@ function ProjectPage() {
                 </div>
               </div>
             ))}
-            {displayedProjects.length === 0 && (
+            {_displayedProjects.length === 0 && (
               <div className="text--center" style={{ gridColumn: "1 / -1", padding: "2rem" }}>
                 No projects found for this filter.
               </div>

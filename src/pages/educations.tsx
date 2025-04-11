@@ -45,13 +45,13 @@ const educations: Education[] = [
       "Decision Support Systems",
     ],
     extracurricular_activities: [
-      "Enhanced my English proficiency from intermediate to fluent.",
+      "Enhanced my English proficiency from intermediate to fluent level.",
       "Completed CS50's Introduction to Programming with Python course.",
-      "Developed scripts in Python and Bash to enhance skills in automation and problem-solving.",
-      "Expanded my knowledge of networking.",
-      "Engaged in Cybermentor's 'Zero to Hero' course to acquire knowledge in network penetration testing and fundamental cybersecurity principles.",
-      "Having used Linux as my main operating system for almost four years, I have successfully resolved numerous Linux-related issues and explored various Linux distributions.",
-      "Acquired knowledge in Gentoo, Arch, Debian, NixOS and Fedora to expand my Linux expertise, with substantial progress in Fedora and Arch.",
+      "Developed scripts in Python and Bash to enhance my skills in automation and problem-solving.",
+      "Expanded my knowledge of networking fundamentals.",
+      "Participated in Cybermentor's 'Zero to Hero' course to acquire knowledge in network penetration testing and fundamental cybersecurity principles.",
+      "Having used Linux as my main operating system for almost four years, I have successfully resolved numerous Linux-related issues and explored various distributions.",
+      "Acquired knowledge in Gentoo, Arch, Debian, NixOS, and Fedora to expand my Linux expertise, with significant progress in Fedora and Arch.",
     ],
   },
   {
@@ -76,24 +76,24 @@ const educations: Education[] = [
     ],
     extracurricular_activities: [
       "Acquired fundamental knowledge of SQL and practiced it through homework assignments.",
-      "Learned the fundamentals of virtualizing Linux on VMware and Virtualbox.",
-      "Learned web development fundamentals; HTML, CSS, and PHP. Also gained proficiency in using Joomla and WordPress.",
+      "Learned the fundamentals of virtualizing Linux on VMware and VirtualBox.",
+      "Learned web development fundamentals: HTML, CSS, and PHP. Also gained proficiency in using Joomla and WordPress.",
       "Learned how programming languages function and the underlying processes in computer programming.",
-      "Learned desktop and laptop maintenance, including cleaning and applying thermal paste. ",
+      "Learned desktop and laptop maintenance, including cleaning and applying thermal paste.",
     ],
   },
 ];
 
 function EducationPage() {
-  const [activeFilter, setActiveFilter] = useState<string>("all");
-  const [displayedEducation, setDisplayedEducation] = useState<Education[]>([]);
+  const [_activeFilter, setActiveFilter] = useState<string>("all");
+  const [_displayedEducation, setDisplayedEducation] = useState<Education[]>([]);
 
   useEffect(() => {
     const filtered = educations.filter((education) =>
-      activeFilter === "all" ? true : education.category.includes(activeFilter)
+      _activeFilter === "all" ? true : education.category.includes(_activeFilter)
     );
     setDisplayedEducation(filtered);
-  }, [activeFilter]);
+  }, [_activeFilter]);
 
   return (
     <Layout title="Education" description="My Education">
@@ -111,7 +111,7 @@ function EducationPage() {
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`portfolio-tab ${activeFilter === filter ? 'portfolio-tab-active' : ''}`}
+                className={`portfolio-tab ${_activeFilter === filter ? 'portfolio-tab-active' : ''}`}
               >
                 {filter.charAt(0).toUpperCase() + filter.slice(1)}
               </button>
@@ -119,7 +119,7 @@ function EducationPage() {
           </div>
 
           <div className="education-timeline">
-            {displayedEducation.map((education, index) => (
+            {_displayedEducation.map((education, index) => (
               <div
                 key={education.id}
                 className={`education-item ${
@@ -156,7 +156,7 @@ function EducationPage() {
                 </div>
               </div>
             ))}
-            {displayedEducation.length === 0 && (
+            {_displayedEducation.length === 0 && (
               <div className="text--center" style={{ padding: "2rem" }}>
                 No education found for this filter.
               </div>

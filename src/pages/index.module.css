@@ -179,6 +179,7 @@
 		var(--ifm-color-primary) 100%
 	);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: textGlow 4s ease-in-out infinite alternate;
 }
@@ -196,6 +197,7 @@
 		var(--ifm-color-primary) 100%
 	);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	filter: blur(4px);
 	opacity: 0.5;
