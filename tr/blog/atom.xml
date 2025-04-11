@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://cyber-syntax.github.io/tr/blog</id>
+    <title>Cyber-Syntax Portfolio Blog</title>
+    <updated>2024-12-16T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://cyber-syntax.github.io/tr/blog"/>
+    <subtitle>Cyber-Syntax Portfolio Blog</subtitle>
+    <icon>https://cyber-syntax.github.io/tr/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Why pirate software is dangerous?]]></title>
+        <id>https://cyber-syntax.github.io/tr/blog/security</id>
+        <link href="https://cyber-syntax.github.io/tr/blog/security"/>
+        <updated>2024-12-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[As a student, I can say that I used to think piracy was the solution until I learned about open source and free alternatives (see https://alternativeto.net/) and that pirated applications could contain viruses. Generally, hacker groups cracking applications in pirated software tend to avoid adding viruses so as not to tarnish their reputation.]]></summary>
+        <content type="html"><![CDATA[<p>As a student, I can say that I used to think piracy was the solution until I learned about open source and free alternatives (see <a href="https://alternativeto.net/" target="_blank" rel="noopener noreferrer">https://alternativeto.net/</a>) and that pirated applications could contain viruses. Generally, hacker groups cracking applications in pirated software tend to avoid adding viruses so as not to tarnish their reputation.</p>
+<p>However, the probability of viruses being added to pirated applications is quite high until they reach websites accessible to end users in Turkey. Therefore, you can incur much more damage by downloading pirated software than by paying for the legitimate version. In fact, some end users, despite lacking knowledge on these issues, may try to deceive you by claiming that pirated applications are free of viruses. Of course, the person adding the virus tries to prolong the time they can stay undetected by using the system minimally and not drawing attention to themselves.</p>
+<h1>If you really need to use cracked software, than:</h1>
+<p>Nevertheless, I cannot claim definitively that every pirated application contains a virus because sometimes such situations may not arise. Nonetheless, I do not recommend pirated software at all because the risk of virus infection is much higher than the possibility of it not happening. Additionally, if no other solutions can be found, using at least a virtualized system in an environment where internet connectivity is severed can be the most reliable method (see Qubes OS, VirtualBox).</p>]]></content>
+        <author>
+            <name>Cyber-Syntax</name>
+            <uri>https://github.com/Cyber-Syntax</uri>
+        </author>
+        <category label="Security" term="Security"/>
+    </entry>
+</feed>
