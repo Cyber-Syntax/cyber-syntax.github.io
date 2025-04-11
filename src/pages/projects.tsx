@@ -140,6 +140,11 @@ function ProjectPage() {
     setExpandedCards({});
   }, [_activeFilter]);
 
+  // Check if description needs a "Show More" button - using character count instead of length
+  const isDescriptionLong = (text: string): boolean => {
+    return text.length > 150;
+  };
+
   const toggleCardExpansion = (projectId: string) => {
     setExpandedCards(prev => ({
       ...prev,
@@ -194,17 +199,19 @@ function ProjectPage() {
                 </div>
 
                 <div className="card-body">
-                  <p className={`card-description ${_expandedCards[project.id] ? 'expanded' : ''}`}>
-                    {project.description}
-                  </p>
-                  {project.description.length > 150 && (
-                    <button 
-                      className="show-more-button" 
-                      onClick={() => toggleCardExpansion(project.id)}
-                    >
-                      {_expandedCards[project.id] ? 'Show Less' : 'Show More'}
-                    </button>
-                  )}
+                  <div className="card-description-container">
+                    <p className={`card-description ${_expandedCards[project.id] ? 'expanded' : ''}`}>
+                      {project.description}
+                    </p>
+                    {isDescriptionLong(project.description) && (
+                      <button 
+                        className="show-more-button" 
+                        onClick={() => toggleCardExpansion(project.id)}
+                      >
+                        {_expandedCards[project.id] ? 'Show Less' : 'Show More'}
+                      </button>
+                    )}
+                  </div>
                   <div className="card-tags">
                     {project.tags.map((tag, idx) => (
                       <span key={idx} className="card-tag">
