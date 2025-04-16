@@ -70,6 +70,17 @@ const projects: Project[] = [
     category: ["all", "bash"],
   },
   {
+    id: "fedora-flatpak-status",
+    title: "❱ fedora-flatpak-status",
+    link: "https://github.com/Cyber-Syntax/dot-files/blob/bare-repo/.config/qtile/scripts/fedora-flatpak-status.sh",
+    owner: "Owner",
+    date: "March 2025 - Current",
+    description:
+      "Developed a shell script to monitor and display newly updated packages on the Fedora Linux distribution.",
+    tags: ["bash"],
+    category: ["all", "bash"],
+  },
+  {
     id: "WallpaperChanger",
     title: "🛸 WallpaperChanger",
     link: "https://github.com/Cyber-Syntax/WallpaperChanger",
@@ -116,7 +127,7 @@ const projects: Project[] = [
   {
     id: "dnf-update-status",
     title: "👒 dnf-update-status",
-    link: "https://github.com/Cyber-Syntax/dot-files/blob/main/.config/waybar/dnf-update-status.py",
+    link: "https://github.com/Cyber-Syntax/dot-files/blob/bare-repo/Documents/scripts/fedora/dnf-update-status.py",
     owner: "Owner",
     date: "Feb 2024 - Feb 2024",
     description:
