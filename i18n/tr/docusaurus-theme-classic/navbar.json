@@ -34,5 +34,13 @@
   "item.label.Dev": {
     "message": "Geliştirici",
     "description": "Navbar item with label Dev"
+  },
+  "item.label.Developer": {
+    "message": "Developer",
+    "description": "Navbar item with label Developer"
+  },
+  "item.label.Wiki": {
+    "message": "Wiki",
+    "description": "Navbar item with label Wiki"
   }
 }

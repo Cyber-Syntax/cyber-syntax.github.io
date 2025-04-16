@@ -17,4 +17,8 @@ hola:
 security:
   label: Security
   permalink: /security
-  description: Security related blogpostsn
+  description: Security related blog posts
+apps:
+  label: Apps
+  permalink: /apps
+  description: Apps related blog posts
