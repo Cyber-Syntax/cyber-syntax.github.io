@@ -14,8 +14,6 @@
 	--ifm-color-primary-light: #81a1c1;
 	--ifm-color-primary-lighter: #88c0d0;
 	--ifm-color-primary-lightest: #8fbcbb;
-	--ifm-code-font-size: 95%;
-	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
 	/* Cyber terminal color variables - using dark theme values for both modes */
 	--cyber-glow-primary: rgba(94, 231, 223, 0.7);
@@ -35,7 +33,6 @@
 	--ifm-color-primary-light: #88c0d0;
 	--ifm-color-primary-lighter: #8fbcbb;
 	--ifm-color-primary-lightest: #eceff4;
-	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
 	/* Override Docusaurus dark theme variables with Nord color palette */
 	--ifm-background-color: #2e3440 !important;
@@ -48,7 +45,6 @@
 	--ifm-color-content: #e5e9f0 !important;
 	--ifm-color-content-secondary: #d8dee9 !important;
 	--ifm-breadcrumb-color-active: #88c0d0 !important;
-	--ifm-code-background: #4c566a !important;
 	--ifm-dropdown-background-color: #3b4252 !important;
 	--ifm-hover-overlay: #434c5e !important;
 
@@ -78,11 +74,6 @@
 
 [data-theme="dark"] .table-of-contents__link:hover {
 	color: #88c0d0 !important;
-}
-
-[data-theme="dark"] code {
-	background-color: #4c566a !important;
-	color: #eceff4 !important;
 }
 
 [data-theme="dark"] .button--secondary {

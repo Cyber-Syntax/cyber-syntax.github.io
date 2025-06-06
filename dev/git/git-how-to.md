@@ -180,7 +180,7 @@ git rebase origin/main
 
 ## How to squash N commits to 1 commit?
 >
-> More Resource: https://www.freecodecamp.org/news/git-squash-commits
+> [!INFO] Resource: [freecodecamp](https://www.freecodecamp.org/news/git-squash-commits)
 
 ```python
 # Commits = 26
