@@ -2,9 +2,9 @@
 title: Github SSH Setup
 id: github-ssh-setup
 last_update:
-    date: 11.07.2025
+    date: 08.15.2025
 publish:
-date: 08.15.2025
+    date: 08.15.2025
 tags:
     - git
     - github
