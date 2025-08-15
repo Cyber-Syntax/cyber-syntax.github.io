@@ -3,10 +3,24 @@ sidebar_position: 2
 title: Docusaurus How to's
 # id: docusaurus
 tags:
-  - docusaurus
+    - docusaurus
 ---
 
 <!-- TOC -->
+
+## How to update docusaurus?
+
+### Core updates
+
+```
+yarn upgrade @docusaurus/core@latest @docusaurus/preset-classic@latest @docusaurus/module-type-aliases@latest @docusaurus/types@latest
+```
+
+### Specific updates
+
+```
+npx update-browserslist-db@latest
+```
 
 ## How to change some of the css?
 
@@ -38,7 +52,7 @@ slug: /docs/Linux/Github/docusaurus
 title: Docusaurus
 id: docusaurus
 tags:
-  - github
+    - github
 ---
 
 <!-- TOC -->
