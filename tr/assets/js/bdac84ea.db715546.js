@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[6763],{1360:e=>{e.exports=JSON.parse('{"tag":{"label":"bare-repo","permalink":"/tr/dev/tags/bare-repo","allTagsPath":"/tr/dev/tags","count":1,"items":[{"id":"git/bare-repo","title":"git bare repository","description":"source","permalink":"/tr/dev/git/bare-repo"}],"unlisted":false}}')}}]);
