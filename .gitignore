@@ -1,3 +1,6 @@
+# GNU Stow
+stow.sh
+
 # Dependencies
 /node_modules
 

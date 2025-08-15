@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 # slug: /docs/dev/git
 title: Git Troubleshoots
 # id: git2
@@ -8,8 +8,7 @@ tags:
 ---
 
 <!-- TOC -->
-
-## Updates were rejected because the remote contains work that you do not have locally.
+## Updates were rejected because the remote contains work that you do not have locally
 
 ```git
 git pull --rebase # ofcourse backup before do
@@ -17,7 +16,7 @@ git pull --rebase # ofcourse backup before do
 
 ## Accessing A Lost Commit
 
-> https://github.com/jbranchaud/til/blob/master/git/accessing-a-lost-commit.md#accessing-a-lost-commit
+> [accessing-a-lost-commit](https://github.com/jbranchaud/til/blob/master/git/accessing-a-lost-commit.md#accessing-a-lost-commit)
 
 If you have lost track of a recent commit (perhaps you did a reset), you can generally still get it back. Run `git reflog` and look through the output to see if you can find that commit. Note the sha value associated with that commit. Let's say it is `39e85b2`. You can peruse the details of that commit with `git show 39e85b2`.
 
@@ -37,11 +36,11 @@ From there, the utility belt that is git is at your disposal. For example, you c
 
 > source: [stackoverflow](https://stackoverflow.com/questions/51955269/how-to-do-a-pull-request-when-my-branch-and-master-have-no-related-history)
 
-1. Checkout `branch_x`​ to work on it:  
+1. Checkout `branch_x`​ to work on it:
    ​`git checkout bare-repo`​
-2. Reset soft to `master`​ so that `branch_x`​ is now at the same place than `master`​ in the git history but all your changes are now staged (`reset --soft`​ doesn't touch files in the working directory and even add the changes directly to the staging area):  
+2. Reset soft to `master`​ so that `branch_x`​ is now at the same place than `master`​ in the git history but all your changes are now staged (`reset --soft`​ doesn't touch files in the working directory and even add the changes directly to the staging area):
    ​`git reset --soft main`​
-3. Commit the files so that it will create one commit containing just the changes made in `branch_x`​ compared to `master`​  
+3. Commit the files so that it will create one commit containing just the changes made in `branch_x`​ compared to `master`​
    ​`git commit -m "update bare-repo files"`​
 
 4. And now `branch_x`​​ is one commit ahead of `master`​​ and you can create your PR. You perhaps will have to `push --force`​​ depending if you already pushed `branch_x`​​

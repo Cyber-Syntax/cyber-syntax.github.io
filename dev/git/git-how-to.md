@@ -3,12 +3,38 @@ sidebar_position: 1
 title: Git Fundamentals
 id: git-how-to
 last_update:
-  date: 06/06/2025
+  date: 08/07/2025
 tags:
   - git
 ---
 
 <!-- TOC -->
+
+## How to handle 2 branch of different updates, changes ?
+- if there is no conflict:
+  - test branch -> updated etc. -> old version 1.0.0
+  - fix/errors -> updated etc. -> merged to main with new version 1.0.1
+  - If there is no conflict, create a PR for test branch and merge directly
+you won't lose any new files added to main from fix/errors. - e.g pyproject.toml, changelog or any changes. -
+
+
+## How to fix wrong commit head
+```
+# Step 1: Start interactive rebase for the last commit
+git rebase -i HEAD~1
+# Step 1: show this
+pick abc1234 My incorrect commit message
+
+# Step 2: make reword that commit in the first interactive git, it show that commit
+# update the commit head and save :wq if nvim or vim used
+reword abc1234 My incorrect commit message
+
+# Using --force-with-lease is safer—it prevents overwriting updates if someone else has pushed in the meantime
+git push --force-with-lease
+
+# Use this if above not work
+git push --force
+```
 
 ## How to fix when you merge multiple commit
 
