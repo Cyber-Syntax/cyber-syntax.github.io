@@ -3,27 +3,6 @@ import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
 import React, { useEffect, useState } from 'react';
 
-// const FeatureList = [
-//   {
-//     icon: "🎓",
-//     title: "Education",
-//     description:
-//       "I graduated from computer programming and I am currently studying Management Information Systems at Anadolu university.",
-//   },
-//   {
-//     icon: "🐧",
-//     title: "Linux Enthusiast",
-//     description:
-//       "I love Linux and I am eager to enhance my knowledge of it.",
-//   },
-//   {
-//     icon: "⚙️",
-//     title: "System Administrator",
-//     description:
-//       "I am passionate about becoming a Linux System Administrator. I love solving problems and automating things with Python.",
-//   },
-// ];
-
 function Feature({ icon, title, description, isVisible, index }) {
   return (
     <div 
