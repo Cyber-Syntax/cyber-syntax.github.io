@@ -17,7 +17,7 @@ const educations: Education[] = [
     id: "University of Anadolu",
     category: ["all", "bachelor"],
     date: "2022-2025",
-    title: "Pursuing Undergraduate Degree in Management Information Systems",
+    title: "Bachelor's Degree in Management Information Systems",
     taken_courses: [
       "Advanced Programming",
       "Database Programming",
