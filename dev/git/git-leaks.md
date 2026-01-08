@@ -11,10 +11,12 @@ tags:
 
 <!-- TOC -->
 
-## Scan leaks via gitleaks
+## Scan secrets via gitleaks
 
 ```bash
 gitleaks dir ~/Documents/repository --report-path gitleaks-report.json
+
+gitleaks dir ~/dotfiles --report-path gitleaks-dotfiles.json
 ```
 
 <!-- /TOC -->

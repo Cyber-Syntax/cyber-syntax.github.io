@@ -10,15 +10,55 @@ tags:
 
 <!-- TOC -->
 
+## How to get removed folder/files from git
+
+You can absolutely restore a previously-removed folder from your repo’s history without losing the current branch’s changes. Here’s one clear way + some tips for your case (you removed a folder from your dotfiles and now want to bring it back).
+
+Assume the folder path is `path/to/folder` in your repo.
+
+1. **Stay on your current branch** (so you keep all in-progress work).
+2. Find the commit where that folder was last present (just before deletion). For example:
+
+   ```bash
+   git log --diff-filter=D --summary -- path/to/folder
+   ```
+
+   This shows commits where files/folders were deleted. ([Better Stack][1])
+3. Note the commit hash (say it’s `abcd1234`) of the deletion. Then the parent commit (`abcd1234^`) is where the folder still existed.
+4. Restore the folder from that old commit into your working tree:
+
+   ```bash
+   git checkout abcd1234^ -- path/to/folder
+   ```
+
+   This will bring the folder back into your working directory (but it’s not yet committed). ([Stack Overflow][2])
+5. You'll now have the folder **and** your current branch’s other changes intact. Stage and commit the restoration:
+
+   ```bash
+   git add path/to/folder
+   git commit -m "Restore folder path/to/folder from history"
+   ```
+
+6. Push, merge, whatever your workflow demands.
+
+### 🔍 Additional things to note
+
+* This method **does not** rewrite history (so safe in collaborative settings).
+* If the folder has **moved** or renamed, you might want to preserve its original history (Git only tracks contents, not strictly folders). ([Reddit][3])
+* If you want to bring back *just some files* from that folder (rather than everything) you can specify the file paths instead of the folder.
+* If there were many commits that changed/removed parts of that folder, you may need to pick a commit where the state is what you want.
+* If the deletion was a long time ago, you might use `git reflog` or similar to find the state. ([Smashing Magazine][4])
+
 ## How to handle 2 branch of different updates, changes ?
-- if there is no conflict:
-  - test branch -> updated etc. -> old version 1.0.0
-  - fix/errors -> updated etc. -> merged to main with new version 1.0.1
-  - If there is no conflict, create a PR for test branch and merge directly
+
+* if there is no conflict:
+  * test branch -> updated etc. -> old version 1.0.0
+  * fix/errors -> updated etc. -> merged to main with new version 1.0.1
+  * If there is no conflict, create a PR for test branch and merge directly
 you won't lose any new files added to main from fix/errors. - e.g pyproject.toml, changelog or any changes. -
 
+## How to fix wrong commit head/message
 
-## How to fix wrong commit head
 ```
 # Step 1: Start interactive rebase for the last commit
 git rebase -i HEAD~1
@@ -28,6 +68,9 @@ pick abc1234 My incorrect commit message
 # Step 2: make reword that commit in the first interactive git, it show that commit
 # update the commit head and save :wq if nvim or vim used
 reword abc1234 My incorrect commit message
+
+# Step 3: Make sure changes are correct
+git log
 
 # Using --force-with-lease is safer—it prevents overwriting updates if someone else has pushed in the meantime
 git push --force-with-lease
